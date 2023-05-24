@@ -14,7 +14,7 @@
 <body>
 
     <main>
-
+        <? include("./src/components/carousel/carousel.php") ?>
     </main>
 
     <script src="./src/assets/js/app.js"></script>
