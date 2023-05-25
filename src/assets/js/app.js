@@ -89,3 +89,6 @@ const updateSlide = () => {
         }
     }
 }
+
+const menu = document.querySelector('.menu_toggle');
+menu.addEventListener('click', () => { menu.classList.toggle('active') })

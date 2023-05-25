@@ -17,17 +17,31 @@
                 <div class="toggle_line"></div>
                 <div class="toggle_line"></div>
             </div>
-            <div class="menu_items">
-                <nav>
-                    <a href="index.php">Home</a>
-                    <a href="index.php">Sobre o Passaporte Prime</a>
-                    <a href="index.php">Mostra de Filmes do Japão</a>
-                    <a href="index.php">Destaques Anteriores</a>
-                    <a href="index.php">Tribos e Impérios</a>
-                    <a href="index.php">Passaporte News</a>
-                    <a href="index.php">Fale Conosco</a>
-                </nav>
-            </div>
+            <nav class="menu_items">
+                <ul class="items">
+                    <li class="item">
+                        <a href="index.php">Home</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Sobre o Passaporte Prime</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Mostra de Filmes do Japão</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Destaques Anteriores</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Tribos e Impérios</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Passaporte News</a>
+                    </li>
+                    <li class="item">
+                        <a href="index.php">Fale Conosco</a>
+                    </li>
+                </ul>
+            </nav>
         </div>
     </div>
 </header>
