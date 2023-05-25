@@ -1,0 +1,195 @@
+#sinopse {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#sinopse .sinopse_row {
+    width: 55%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    padding: 5% 0;
+}
+
+.sinopse_content .sinopse_title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sinopse_content .sinopse_description {
+    color: #fff;
+    font-size: 18px;
+    line-height: 180%;
+    font-weight: 200;
+}
+
+.sinopse_row .sinopse_area {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 70px;
+    height: 400px;
+    padding: 5% 0;
+    transition: height 0.5s ease;
+    overflow: hidden;
+}
+
+.sinopse_row .sinopse_area.active {
+    height: 1560px;
+}
+
+.sinopse_row .sinopse_area .sinopse_content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+
+.sinopse_area .cast {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    justify-content: center;
+}
+
+.cast .container_cast_title {
+    width: 100%;
+    height: auto;
+    position: relative;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.cast .container_cast_title .cast_title {
+    color: #fff;
+    font-size: 32px;
+    font-weight: 600;
+    text-transform: uppercase;
+    z-index: 1;
+    background-color: #000616;
+    padding: 0 20px 0 0;
+}
+
+.cast .container_cast_title::after {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    width: 100%;
+    height: 2px;
+    background-color: #fff;
+}
+
+.cast .cast_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 20px;
+    height: auto;
+}
+
+.cast .cast_items .cast_item {
+    width: 100%;
+    height: auto;
+    max-width: 170px;
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.cast_item .item_image {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.cast_item .item_texts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 8px;
+}
+
+.cast_item .item_texts .cast_name {
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.cast_item .item_texts .cast_character {
+    font-size: 15px;
+    color: #fff;
+    font-weight: 200;
+}
+
+.sinopse_row .function_sinopse {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 100%;
+    height: 120px;
+}
+
+.sinopse_row .function_sinopse img {
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: plus-lighter;
+    bottom: 10px;
+}
+
+.sinopse_row .function_sinopse .sinopse_line {
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: center;
+}
+
+.sinopse_row .function_sinopse .sinopse_line::after {
+    content: '';
+    background: #BC8A3A;
+    width: 650px;
+    height: 2px;
+    position: absolute;
+    z-index: -1;
+    border-radius: 2px;
+}
+
+.sinopse_row .function_sinopse .sinopse_button {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: center;
+    padding: 4px;
+    box-shadow: 0 0 10px #000616;
+    border-radius: 50%;
+    border: 2px solid #BC8A3A;
+    position: absolute;
+    z-index: 2;
+    background-color: #000616;
+}

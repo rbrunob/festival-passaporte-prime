@@ -8,13 +8,13 @@ slides.forEach(slide => {
     slide.addEventListener('click', () => {
         index = parseInt(slide.getAttribute('data-index'));
 
-        //call functions
+        // call functions
         updateSlide();
         updateBackground();
     });
 });
 
-//update background whenever function is called
+// update background whenever function is called
 const updateBackground = () => {
     switch (index) {
         case 0:
@@ -99,3 +99,10 @@ const updateSlide = () => {
 const menu = document.querySelector('.menu_toggle');
 menu.addEventListener('click', () => { menu.classList.toggle('active') })
 
+// open sinopse 
+const buttonSinopse = document.querySelector('.sinopse_button');
+const sinopseArea = document.querySelector('.sinopse_area');
+
+buttonSinopse.addEventListener('click', () => {
+    sinopseArea.classList.toggle('active');
+})

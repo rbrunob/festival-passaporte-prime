@@ -1,20 +1,20 @@
 <section id="sinopse">
     <div class="sinopse_row">
         <div class="sinopse_area">
-            <div class="sinopse_content-1">
+            <div class="sinopse_content">
                 <h1 class="sinopse_title">sinopse</h1>
                 <p class="sinopse_description">
-                    Será que um jovem rapaz conseguirá encontrar o assassino de sua mãe e recuperar a paz no mundo das artes marciais?
+                    Será que um jovem rapaz conseguirá encontrar o assassino de sua mãe e recuperar a paz no mundo das artes marciais? <br><br>
                     Xiao Yan (Leo Wu) é uma criança indefesa de 9 anos quando sua mãe é morta por inimigos perversos. Apesar de seus melhores esforços, as habilidades de artes marciais de Xiao Yan não estão se desenvolvendo como sua família esperava. Mas tudo isso muda quando, aos 15 anos, ele acidentalmente invoca o Senhor dos Remédios – O Grande Mestre Ancião – Yao Chen (Baron Chen) usando o anel de sua mãe. Com a ajuda de Yao Chen, Xiao Yan se torna um grande artista marcial cujo objetivo é trazer justiça pela morte de sua mãe. Com a leal Xiao Xun’er (Lin Yun) ao seu lado, conseguirá Xiao Yan derrotar as forças do mal e devolver a paz à sua terra?
                 </p>
             </div>
-            <div class="sinopse_content-2">
+            <div class="sinopse_content">
                 <h1 class="sinopse_title">continente de qi</h1>
                 <p class="sinopse_description">
                     Xiao Yan (Leo Wu) é uma criança indefesa de 9 anos quando sua mãe é morta por inimigos perversos. Apesar de seus melhores esforços, as habilidades de artes marciais de Xiao Yan não estão se desenvolvendo como sua família esperava. Mas tudo isso muda quando, aos 15 anos, ele acidentalmente invoca o Senhor dos Remédios – O Grande Mestre Ancião – Yao Chen (Baron Chen) usando o anel de sua mãe. Com a ajuda de Yao Chen, Xiao Yan se torna um grande artista marcial cujo objetivo é trazer justiça pela morte de sua mãe. Com a leal Xiao Xun’er (Lin Yun) ao seu lado, conseguirá Xiao Yan derrotar as forças do mal e devolver a paz à sua terra?
                 </p>
             </div>
-            <div class="sinopse_content-3">
+            <div class="sinopse_content">
                 <h1 class="sinopse_title">curiosidades</h1>
                 <p class="sinopse_description">
                     Lutas Céu Afora (Fights Break Sphere) é um super Cdrama de 2018, baseado nos mangás “Doupo Cangqiong” e “Universo Marcial”, do autor Tian Can Tu Dou. Certamente, o público brasileiro fã de séries chinesas e asiáticas vai adorar. Afinal, a série possui uma ótima avaliação (9.8) no ranking dos sites de doramas.
@@ -81,14 +81,14 @@
             </div>
         </div>
         <div class="function_sinopse">
-            <div class="sinopse_line">
-                <button class="sinopse_button">
-                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M10.2833 2.31677V18.4668" stroke="#BC8A3A" stroke-width="3" stroke-linecap="round" />
-                        <path d="M18.2166 10.25L2.06663 10.25" stroke="#BC8A3A" stroke-width="3" stroke-linecap="round" />
-                    </svg>
-                </button>
-            </div>
+            <div class="sinopse_line"></div>
+            <button class="sinopse_button">
+                <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M10.2833 2.31677V18.4668" stroke="#BC8A3A" stroke-width="3" stroke-linecap="round" />
+                    <path d="M18.2166 10.25L2.06663 10.25" stroke="#BC8A3A" stroke-width="3" stroke-linecap="round" />
+                </svg>
+            </button>
+
             <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/luz-sinopse-mais-glitter.webp" alt="" />
         </div>
     </div>
