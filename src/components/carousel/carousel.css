@@ -1,0 +1,155 @@
+#carousel {
+    background-image: url("https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-passaporte-prime-01.webp");
+    background-repeat: no-repeat;
+    background-position: top;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    transition: all .5s;
+}
+
+.carousel_row {
+    width: 80%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+    gap: 10px;
+    position: relative;
+}
+
+.carousel_items {
+    display: flex;
+    align-items: center;
+    width: 750px;
+    height: 400px;
+    position: relative;
+    justify-content: center;
+    bottom: 30px;
+}
+
+.effect_carousel {
+    position: absolute;
+    width: auto;
+    height: auto;
+    bottom: 0;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    pointer-events: none;
+}
+
+.effect_carousel img {
+    width: 100%;
+    height: auto;
+    pointer-events: none;
+}
+
+.carousel_items .carousel_item {
+    flex-shrink: 0;
+    margin: 0;
+    transition: all .3s ease-in-out;
+    border-radius: 26px;
+    position: absolute;
+    width: 150px;
+    height: 265px;
+    cursor: pointer;
+    filter: brightness(.5);
+}
+
+.carousel_items .carousel_item img {
+    border-radius: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_items .carousel_item.item-0 {
+    transform: translateX(0%);
+    z-index: 2;
+    filter: brightness(1);
+}
+
+.carousel_items .carousel_item.item-1 {
+    transform: translateX(-80%) scale(.9);
+    z-index: 1;
+    transition-delay: .05s;
+}
+
+.carousel_items .carousel_item.item-0 img {
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.carousel_items .carousel_item.item-3 {
+    transform: translateX(-150%) scale(.8);
+    z-index: 0;
+    transition-delay: .1s;
+}
+
+.carousel_items .carousel_item.item-2 {
+    transform: translateX(80%) scale(.9);
+    z-index: 1;
+    transition-delay: .05s;
+}
+
+.carousel_items .carousel_item.item-4 {
+    transform: translateX(150%) scale(.8);
+    z-index: 0;
+    transition-delay: .1s;
+}
+
+.carousel_items .carousel_item.item-1 img {
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.carousel_items .carousel_item.item-2 img {
+    filter: drop-shadow(0px 0px 10px black);
+}
+
+.carousel_button {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    bottom: 60px;
+}
+
+.carousel_button button {
+    background-color: #000924;
+    border: 1px solid #BC8A3A;
+    color: #BC8A3A;
+    text-transform: uppercase;
+    font-size: 24px;
+    font-weight: 600;
+    padding: 5px 30px;
+    border-radius: 35px;
+    width: 155px;
+    pointer-events: auto;
+}
+
+.light_effect {
+    position: absolute;
+    z-index: 1;
+    mix-blend-mode: lighten;
+    width: 155px;
+    height: 41px;
+    bottom: 60px;
+    pointer-events: none;
+}
+
+.light_effect img {
+    position: relative;
+    top: -42px;
+    right: 15px;
+    pointer-events: none;
+}
+
+.carousel_button button:hover {
+    cursor: pointer;
+}
