@@ -16,6 +16,7 @@
     <main>
         <? include("./src/components/carousel/carousel.php") ?>
         <? include("./src/components/sinopse/sinopse.php") ?>
+        <? include("./src/components/characters/characters.php") ?>
     </main>
 
     <script src="./src/assets/js/app.js"></script>

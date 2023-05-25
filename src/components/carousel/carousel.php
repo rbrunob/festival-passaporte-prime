@@ -17,14 +17,6 @@
                 <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-05.webp" alt="image carousel" />
             </div>
         </div>
-        <div class="carousel_actions">
-            <div class="prev">
-
-            </div>
-            <div class="next">
-
-            </div>
-        </div>
         <div class="effect_carousel">
             <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/golden-glitter.webp" alt="" />
         </div>
