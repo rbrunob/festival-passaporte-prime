@@ -1,16 +1,20 @@
+// carousel main character 
 const slides = document.querySelectorAll('.carousel_item');
 const dynamicBackground = document.querySelector('#carousel');
 let index = 0;
 
+// get slide array
 slides.forEach(slide => {
     slide.addEventListener('click', () => {
         index = parseInt(slide.getAttribute('data-index'));
 
+        //call functions
         updateSlide();
         updateBackground();
     });
 });
 
+//update background whenever function is called
 const updateBackground = () => {
     switch (index) {
         case 0:
@@ -30,6 +34,7 @@ const updateBackground = () => {
     }
 }
 
+// update slide position whenever function is called
 const updateSlide = () => {
     for (i = 0; i < slides.length; i++) {
         if (slides.length == 3) {
@@ -90,5 +95,7 @@ const updateSlide = () => {
     }
 }
 
+// menu toggle
 const menu = document.querySelector('.menu_toggle');
 menu.addEventListener('click', () => { menu.classList.toggle('active') })
+
