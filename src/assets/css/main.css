@@ -23,3 +23,8 @@
     border-radius: 0px;
     border: 3px solid #f0c02d;
 }
+
+main {
+    max-width: 1920px;
+    max-height: 1080px;
+}

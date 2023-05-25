@@ -15,7 +15,7 @@
                     <div class="character_image">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/character-image-1.webp" alt="personagem 1" />
                     </div>
-                    <p class="character_name"></p>
+                    <p class="character_name">Medusa</p>
                     <div class="character_description">
                         <p class="description">
                             Yao Chen é o Grande Ancião Mestre da Alquimia e Medicina, considerado um
@@ -23,14 +23,14 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button">Saiba mais</button>
                 </div>
 
                 <div class="character_item">
                     <div class="character_image">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/character-image-2.webp" alt="personagem 2" />
                     </div>
-                    <p class="character_name"></p>
+                    <p class="character_name">Yao Chen</p>
                     <div class="character_description">
                         <p class="description">
                             Yao Chen é o Grande Ancião Mestre da Alquimia e Medicina, considerado um
@@ -38,14 +38,14 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button">Saiba mais</button>
                 </div>
 
                 <div class="character_item">
                     <div class="character_image">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/character-image-3.webp" alt="personagem 3" />
                     </div>
-                    <p class="character_name"></p>
+                    <p class="character_name">Xiao Xun`er</p>
                     <div class="character_description">
                         <p class="description">
                             Yao Chen é o Grande Ancião Mestre da Alquimia e Medicina, considerado um
@@ -53,14 +53,14 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button">Saiba mais</button>
                 </div>
 
                 <div class="character_item">
                     <div class="character_image">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/character-image-4.webp" alt="personagem 4" />
                     </div>
-                    <p class="character_name"></p>
+                    <p class="character_name">Yao Xiao</p>
                     <div class="character_description">
                         <p class="description">
                             Yao Chen é o Grande Ancião Mestre da Alquimia e Medicina, considerado um
@@ -68,7 +68,7 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button">Saiba mais</button>
                 </div>
             </div>
 
