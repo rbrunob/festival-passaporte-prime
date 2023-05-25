@@ -105,4 +105,6 @@ const sinopseArea = document.querySelector('.sinopse_area');
 
 buttonSinopse.addEventListener('click', () => {
     sinopseArea.classList.toggle('active');
+    buttonSinopse.classList.toggle('active');
 })
+

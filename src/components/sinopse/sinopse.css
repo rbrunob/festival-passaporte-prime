@@ -190,6 +190,40 @@
     border-radius: 50%;
     border: 2px solid #BC8A3A;
     position: absolute;
+    width: 30px;
     z-index: 2;
     background-color: #000616;
+    height: 30px;
+}
+
+.sinopse_row .function_sinopse .sinopse_button::after {
+    content: '';
+    width: 20px;
+    height: 2px;
+    background: #bc8a3a;
+    transition: all .3s;
+    position: relative;
+    transform: translate(0px, 0px) rotate(0deg);
+    border-radius: 2px;
+}
+
+.sinopse_row .function_sinopse .sinopse_button::before {
+    content: '';
+    width: 20px;
+    transition: all .3s;
+    height: 2px;
+    background: #bc8a3a;
+    transform: translate(0px, 0px) rotate(90deg);
+    border-radius: 2px;
+    position: absolute;
+}
+
+.sinopse_row .function_sinopse .sinopse_button.active::before {
+    width: 10px;
+    transform: translate(3px, 0px) rotate(45deg);
+}
+
+.sinopse_row .function_sinopse .sinopse_button.active::after {
+    width: 10px;
+    transform: translate(-3px, 0px) rotate(135deg);
 }
