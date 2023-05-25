@@ -12,7 +12,7 @@
 </head>
 
 <body>
-
+    <? include("./src/components/header/header.php") ?>
     <main>
         <? include("./src/components/carousel/carousel.php") ?>
     </main>
