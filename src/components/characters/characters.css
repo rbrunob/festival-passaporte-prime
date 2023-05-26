@@ -71,6 +71,9 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    transition: all .5s ease;
+    position: relative;
+    top: 0;
 }
 
 .character_item .character_image img {
@@ -84,15 +87,22 @@
     font-size: 37px;
     font-weight: 200;
     text-align: center;
+    transition: all .5s ease;
+    position: relative;
+    top: 0;
 }
 
 .character_item .character_description {
     width: 100%;
-    height: 200px;
+    height: 0;
     background: #D9D9D9;
-    padding: 10px;
+    padding: 0;
+    visibility: hidden;
     border-radius: 18px;
-    display: none;
+    transition: all .5s ease;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
 }
 
 .character_item .description {
@@ -100,7 +110,7 @@
     font-weight: 200;
     text-align: center;
     width: 250px;
-    height: 170px;
+    height: 260px;
     line-height: 22px;
     margin: 0 auto;
     overflow: hidden;
@@ -116,7 +126,10 @@
     border-radius: 30px;
     font-size: 15px;
     color: #fff;
+    position: relative;
+    top: 0;
     font-weight: 200;
+    transition: all .5s ease;
 }
 
 .character_item.active .character_image {
