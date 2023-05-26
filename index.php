@@ -18,6 +18,7 @@
         <? include("./src/components/sinopse/sinopse.php") ?>
         <? include("./src/components/characters/characters.php") ?>
         <? include("./src/components/gallery/gallery.php") ?>
+        <? include("./src/components/xtra/xtra.php") ?>
     </main>
 
     <script src="./src/assets/js/app.js"></script>
