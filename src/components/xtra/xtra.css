@@ -1,0 +1,107 @@
+#xtra {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url("https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg_xtra_section.webp");
+    background-position: center;
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+#xtra .xtra_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 3% 0;
+}
+
+.xtra_row .xtra_title {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.xtra_row .xtra_subtitle {
+    color: #fff;
+    width: 70%;
+    line-height: 170%;
+    font-size: 18px;
+    margin: 0 auto;
+    font-weight: 200;
+}
+
+.xtra_carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    width: 100%;
+}
+
+.xtra_carousel .xtra_items {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100%;
+    width: 100%;
+    flex: 0 1 auto;
+    scroll-behavior: smooth;
+    overflow-x: clip;
+    scroll-snap-type: x mandatory;
+}
+
+.xtra_carousel .xtra_items .xra_item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin: 0 12px 0;
+    flex-shrink: 1;
+    filter: brightness(0.7);
+    scroll-snap-align: center;
+}
+
+.xtra_carousel .xtra_items .xra_item.highlight {
+    filter: brightness(1);
+    transform: scale(1.15);
+    margin: 0 30px 0;
+}
+
+.xtra_carousel .xtra_items .xra_item.highlight img {
+    border-radius: 20px;
+}
+
+.xtra_carousel .xtra_items .xra_item img {
+    border-radius: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+}
+
+.xtra_carousel .dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+    width: max-content;
+    height: auto;
+    gap: 8px;
+    position: relative;
+    bottom: -30px;
+}
+
+.xtra_carousel .dots .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff61;
+}
+
+.xtra_carousel .dots .dot.active {
+    background-color: #fff;
+}
