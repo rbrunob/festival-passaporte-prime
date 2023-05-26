@@ -133,7 +133,7 @@ next.addEventListener('click', () => {
 })
 
 let screenWidth = window.screen.width;
-let quantity;
+let quantity; 
 
 if (screenWidth <= 540) {
     quantity = 1;
