@@ -16,7 +16,17 @@
 }
 
 .function_search input[type="text"] {
-    display: none;
+    position: absolute;
+    right: 40px;
+    bottom: 0;
+    height: 100%;
+    width: 0px;
+    background: #00000017;
+    outline: none;
+    transition: all .3s ease;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 header {
@@ -93,6 +103,7 @@ header .header_row {
     height: 35px;
     display: flex;
     align-items: center;
+    position: relative;
     justify-content: center;
 }
 
@@ -199,4 +210,12 @@ header .header_row {
     visibility: visible;
     opacity: 1;
     top: 60px;
+}
+
+.function_search.active input[type="text"] {
+    width: 200px;
+}
+
+.function_search.active .search_icon {
+    background: #ffffff1c;
 }

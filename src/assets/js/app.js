@@ -99,6 +99,16 @@ const updateSlide = () => {
 const menu = document.querySelector('.menu_toggle');
 menu.addEventListener('click', () => { menu.classList.toggle('active') })
 
+// open input search
+const search = document.querySelector('.search_icon');
+const functionHeader = document.querySelector('.function_search');
+const inputHeader = document.querySelector('.function_search input');
+
+search.addEventListener('click', () => {
+    functionHeader.classList.toggle('active')
+    inputHeader.focus()
+})
+
 // open sinopse 
 const buttonSinopse = document.querySelector('.sinopse_button');
 const sinopseArea = document.querySelector('.sinopse_area');
@@ -133,7 +143,7 @@ next.addEventListener('click', () => {
 })
 
 let screenWidth = window.screen.width;
-let quantity; 
+let quantity;
 
 if (screenWidth <= 540) {
     quantity = 1;
