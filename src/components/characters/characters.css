@@ -118,3 +118,31 @@
     color: #fff;
     font-weight: 200;
 }
+
+.character_item.active .character_image {
+    width: 45%;
+    top: 70px;
+}
+
+.character_item.active .character_name {
+    color: #CEA158;
+    top: 80px;
+}
+
+.character_item.active .character_description {
+    height: 370px;
+    visibility: visible;
+    padding: 10px 10px 25px;
+}
+
+.character_item.active .character_button {
+    top: -35px;
+}
+
+.character_item .character_button::before {
+    content: 'Saiba mais';
+}
+
+.character_item.active .character_button::before {
+    content: 'Voltar';
+}

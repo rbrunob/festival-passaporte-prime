@@ -23,7 +23,7 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button">Saiba mais</button>
+                    <button class="character_button"></button>
                 </div>
 
                 <div class="character_item">
@@ -38,7 +38,7 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button">Saiba mais</button>
+                    <button class="character_button"></button>
                 </div>
 
                 <div class="character_item">
@@ -53,7 +53,7 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button">Saiba mais</button>
+                    <button class="character_button"></button>
                 </div>
 
                 <div class="character_item">
@@ -68,7 +68,7 @@
                             para seu discípulo, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button">Saiba mais</button>
+                    <button class="character_button"></button>
                 </div>
             </div>
 
