@@ -12,7 +12,10 @@
     align-items: center;
     justify-content: center;
     gap: 20px;
+<<<<<<< HEAD
     padding: 5% 0;
+=======
+>>>>>>> deef8dd463c0d91eade1e9bb2badab87f4ea53f6
 }
 
 .characters_row .characters_title {
@@ -60,6 +63,7 @@
     flex-shrink: 1;
     width: 100%;
     height: auto;
+<<<<<<< HEAD
     gap: 20px;
 }
 
@@ -145,4 +149,6 @@
 
 .character_item.active .character_button::before {
     content: 'Voltar';
+=======
+>>>>>>> deef8dd463c0d91eade1e9bb2badab87f4ea53f6
 }
