@@ -130,6 +130,7 @@
     top: 0;
     font-weight: 200;
     transition: all .5s ease;
+    cursor: pointer;
 }
 
 .character_item.active .character_image {
@@ -158,4 +159,10 @@
 
 .character_item.active .character_button::before {
     content: 'Voltar';
+}
+
+.character_item .character_button:hover {
+    color: #bc8a3a;
+    background-color: #fff;
+    border-color: #fff;
 }

@@ -108,3 +108,14 @@ buttonSinopse.addEventListener('click', () => {
     buttonSinopse.classList.toggle('active');
 })
 
+// characters effect
+const buttonCharacters = document.querySelectorAll('.character_button');
+
+buttonCharacters.forEach(button => {
+    button.addEventListener('click', () => {
+        const character = button.parentNode;
+        character.classList.toggle('active');
+    })
+})
+
+
