@@ -108,3 +108,42 @@ buttonSinopse.addEventListener('click', () => {
     buttonSinopse.classList.toggle('active');
 })
 
+// characters effect
+const buttonCharacters = document.querySelectorAll('.character_button');
+
+buttonCharacters.forEach(button => {
+    button.addEventListener('click', () => {
+        const character = button.parentNode;
+        character.classList.toggle('active');
+    })
+})
+
+// carousel characters
+const carouselArea = document.querySelector('.carousel_area');
+const characters = document.querySelectorAll('.character_item');
+const prev = document.querySelector('.carousel .prev');
+const next = document.querySelector('.carousel .next');
+
+prev.addEventListener('click', () => {
+    carouselArea.scrollLeft -= carouselArea.offsetWidth;
+})
+
+next.addEventListener('click', () => {
+    carouselArea.scrollLeft += carouselArea.offsetWidth;
+})
+
+let screenWidth = window.screen.width;
+let quantity;
+
+if (screenWidth <= 540) {
+    quantity = 1;
+} else if (screenWidth <= 1000) {
+    quantity = 3
+} else {
+    quantity = 4;
+}
+
+let width = 100 / quantity;
+characters.forEach((item) => {
+    item.style.width = `calc(${width}% - 20px)`;
+});
