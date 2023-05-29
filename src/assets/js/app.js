@@ -157,3 +157,25 @@ let width = 100 / quantity;
 characters.forEach((item) => {
     item.style.width = `calc(${width}% - 20px)`;
 });
+
+// xtra carousel
+const dotsArea = document.querySelector('.dots');
+const dots = document.querySelectorAll('.dot');
+const xtraCarouselArea = document.querySelector('.xtra_items');
+const xtraCarouselItems = document.querySelectorAll('.xra_item');
+
+const carouselWidth = xtraCarouselArea.offsetWidth;
+
+let visibleItems = 0;
+
+xtraCarouselItems.forEach(item => {
+    if (item.offsetLeft >= 0 && item.offsetLeft + item.offsetWidth <= carouselWidth) {
+        visibleItems++
+    } else {
+        console.log('hidden')
+    }
+});
+
+console.log(visibleItems)
+// xtra carousel
+

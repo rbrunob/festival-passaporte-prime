@@ -17,6 +17,7 @@
     width: 100%;
     margin: 0 auto;
     padding: 3% 0;
+    position: relative;
 }
 
 .xtra_row .xtra_title {
@@ -104,4 +105,24 @@
 
 .xtra_carousel .dots .dot.active {
     background-color: #fff;
+}
+
+#xtra .xtra_row::before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    background-image: linear-gradient(90deg, black 5%, transparent 95%);
+    left: 0;
+    z-index: 1;
+}
+
+#xtra .xtra_row::after {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 15%;
+    background-image: linear-gradient(270deg, black 5%, transparent 95%);
+    right: 0;
+    z-index: 1;
 }
