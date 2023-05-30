@@ -3,6 +3,7 @@
 @import url("./_variables.css");
 
 @import url("../../components/header/header.css");
+@import url("../../components/footer/footer.css");
 
 * {
     font-family: 'Inter', sans-serif;
