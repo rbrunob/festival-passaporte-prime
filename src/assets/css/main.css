@@ -27,5 +27,5 @@
 
 main {
     max-width: 1920px;
-    max-height: 1080px;
+    height: auto;
 }
