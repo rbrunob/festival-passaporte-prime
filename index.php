@@ -13,7 +13,7 @@
 
 <body>
     <? include("./src/components/header/header.php") ?>
-    
+
     <main>
         <? include("./src/components/carousel/carousel.php") ?>
         <? include("./src/components/sinopse/sinopse.php") ?>
@@ -21,6 +21,7 @@
         <? include("./src/components/gallery/gallery.php") ?>
         <? include("./src/components/xtra/xtra.php") ?>
         <? include("./src/components/channels/channels.php") ?>
+        <? include("./src/components/cmg/cmg.php") ?>
     </main>
 
     <script src="./src/assets/js/app.js"></script>
