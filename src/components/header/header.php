@@ -1,7 +1,9 @@
 <header>
     <div class="header_row">
         <div class="header_logo">
-            <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/logo-passaporte-prime.webp" alt="Logo Festival Passaporte Prime" />
+            <a href="https://preprod.containermedia.com.br/passaporte-prime/">
+                <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/logo-passaporte-prime.webp" alt="Logo Festival Passaporte Prime" />
+            </a>
         </div>
         <div class="header_functions">
             <div class="function_search">

@@ -33,13 +33,13 @@
                 <div class="avaliable_logos">
                     <div class="logo">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/logo-box-brazil-play.webp" alt="Box Brazil Play" />
-                        <a href="https://www.boxbrazilplay.com.br" class="site">www.boxbrazilplay.com.br</a>
-                        <a href="https://www.boxbrazilplay.com.br" class="button">Assine Aqui!</a>
+                        <a href="https://www.boxbrazilplay.com.br" target="_blank" class="site">www.boxbrazilplay.com.br</a>
+                        <a href="https://www.boxbrazilplay.com.br" target="_blank" class="button">Assine Aqui!</a>
                     </div>
                     <div class="logo">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/logo-claro-tv-plus.webp" alt="Claro Tv Plus" />
-                        <a href="https://www.clarotvmais.com.br" class="site">www.clarotvmais.com.br</a>
-                        <a href="https://www.clarotvmais.com.br" class="button">Assine Aqui!</a>
+                        <a href="https://www.clarotvmais.com.br" target="_blank" class="site">www.clarotvmais.com.br</a>
+                        <a href="https://www.clarotvmais.com.br" target="_blank" class="button">Assine Aqui!</a>
                     </div>
                 </div>
             </div>

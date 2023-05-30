@@ -59,6 +59,10 @@ header .header_row {
     pointer-events: none;
 }
 
+.header_logo a {
+    text-decoration: none;
+}
+
 .header_logo img {
     width: 100%;
     height: auto;
