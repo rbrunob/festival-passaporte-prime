@@ -23,7 +23,9 @@
         <? include("./src/components/channels/channels.php") ?>
         <? include("./src/components/cmg/cmg.php") ?>
     </main>
+
     <? include("./src/components/footer/footer.php") ?>
+    
     <script src="./src/assets/js/app.js"></script>
 </body>
 
