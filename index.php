@@ -8,6 +8,9 @@
     <link rel="stylesheet" href="./src/assets/css/main.css" />
     <link rel="stylesheet" href="./src/assets/css/pages/homepage.css" />
 
+    <link rel="preload" as="image" href="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-passaporte-prime-01.webp" />
+    <link rel="preload" as="image" href="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-passaporte-prime-02.webp" />
+
     <title>Festival Passaporte Prime</title>
 </head>
 
@@ -25,7 +28,7 @@
     </main>
 
     <? include("./src/components/footer/footer.php") ?>
-    
+
     <script src="./src/assets/js/app.js"></script>
 </body>
 

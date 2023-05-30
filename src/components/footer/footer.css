@@ -140,3 +140,12 @@ footer .footer_row .footer_sections a {
 footer .footer_row .footer_sections:last-child {
     width: 250px;
 }
+
+.footer_sections .footer_social .item:hover svg path {
+    fill: #bc8a3a;
+}
+
+.footer_sections .footer_social .item svg path {
+    fill: white;
+    transition: all .3s;
+}

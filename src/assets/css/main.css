@@ -29,3 +29,58 @@ main {
     max-width: 1920px;
     height: auto;
 }
+
+/* popups */
+.popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: all .3s;
+    z-index: 4;
+}
+
+.popup .close {
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    height: 100%;
+    background: #0000006b;
+}
+
+.popup .popup_row {
+    width: 50%;
+    height: auto;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 2;
+}
+
+.popup .popup_row .popup_content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    border: 2px solid #6d5022;
+    border-radius: 20px;
+    padding: 4px;
+}
+
+.popup .popup_row .popup_content img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.popup .popup_row .popup_content video {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}

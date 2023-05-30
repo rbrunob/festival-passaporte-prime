@@ -112,10 +112,18 @@ search.addEventListener('click', () => {
 // open sinopse 
 const buttonSinopse = document.querySelector('.sinopse_button');
 const sinopseArea = document.querySelector('.sinopse_area');
+const sinopse = document.querySelector('#sinopse');
 
 buttonSinopse.addEventListener('click', () => {
-    sinopseArea.classList.toggle('active');
-    buttonSinopse.classList.toggle('active');
+    if (sinopseArea.classList.contains('active')) {
+        sinopseArea.classList.remove('active');
+        buttonSinopse.classList.remove('active');
+        location.href = '#sinopse'
+
+    } else {
+        sinopseArea.classList.add('active');
+        buttonSinopse.classList.add('active');
+    }
 })
 
 // characters effect
@@ -179,3 +187,57 @@ xtraCarouselItems.forEach(item => {
 console.log(visibleItems)
 // xtra carousel
 
+// pop up
+const body = document.querySelector('body');
+
+const popup = document.createElement('div');
+popup.classList.add('popup')
+
+const galleryItems = document.querySelectorAll('.gallery_item');
+
+galleryItems.forEach(item => {
+    item.addEventListener('click', () => {
+        popup.style.visibility = 'visible';
+        popup.style.opacity = '1';
+
+        const src = item.children[0].src;
+
+        popup.innerHTML = `
+        <div class='close'></div>
+        <div class="popup_row">
+            <div class="popup_content">
+                <img src=${src} />
+            </div>
+        </div>
+        `;
+
+        document.querySelector('.close').addEventListener('click', handleClose);
+    })
+})
+
+const teaserButton = document.querySelector('.carousel_button button');
+
+teaserButton.addEventListener('click', () => {
+    popup.style.visibility = 'visible';
+    popup.style.opacity = '1';
+
+    const src = "https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/teaser-passaporte-prime.mp4"
+
+    popup.innerHTML = `
+    <div class='close'></div>
+    <div class="popup_row">
+        <div class="popup_content">
+            <video src=${src} preload controls></video>
+        </div>
+    </div>
+    `;
+
+    document.querySelector('.close').addEventListener('click', handleClose);
+})
+
+body.appendChild(popup);
+
+const handleClose = () => {
+    popup.style.visibility = 'hidden'
+    popup.style.opacity = '0'
+}
