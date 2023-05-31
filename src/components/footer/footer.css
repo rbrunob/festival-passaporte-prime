@@ -149,3 +149,7 @@ footer .footer_row .footer_sections:last-child {
     fill: white;
     transition: all .3s;
 }
+
+footer .footer_row .footer_sections:first-child {
+    width: 380px;
+}
