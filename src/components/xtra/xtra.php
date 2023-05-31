@@ -12,7 +12,7 @@
                 <div class="xra_item">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_1.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item highlight">
+                <div class="xra_item">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_2.webp" alt="extra image carousel" />
                 </div>
                 <div class="xra_item">
@@ -30,13 +30,7 @@
             </div>
 
             <div class="dots">
-                <div class="dot active"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
-                <div class="dot"></div>
+         
             </div>
         </div>
     </div>

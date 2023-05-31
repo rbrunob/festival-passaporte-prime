@@ -168,23 +168,126 @@ characters.forEach((item) => {
 
 // xtra carousel
 const dotsArea = document.querySelector('.dots');
-const dots = document.querySelectorAll('.dot');
 const xtraCarouselArea = document.querySelector('.xtra_items');
 const xtraCarouselItems = document.querySelectorAll('.xra_item');
 
-const carouselWidth = xtraCarouselArea.offsetWidth;
+let currentIndex = 2
+let isDragging = false;
+let startPosition = 0;
+let currentTranslate = 0;
+let prevTranslate = 0;
+let slidePosition = 0;
 
-let visibleItems = 0;
+function handleCarousel(direction) {
 
-xtraCarouselItems.forEach(item => {
-    if (item.offsetLeft >= 0 && item.offsetLeft + item.offsetWidth <= carouselWidth) {
-        visibleItems++
-    } else {
-        console.log('hidden')
+    if (direction == 'right') {
+        xtraCarouselItems[slidePosition].remove();
+        xtraCarouselArea.appendChild(xtraCarouselItems[slidePosition]);
+
+        slidePosition++
+        currentIndex++
+
+        if (currentIndex == xtraCarouselItems.length) {
+            currentIndex = 0;
+        }
+
+        if (slidePosition == xtraCarouselItems.length) {
+            slidePosition = 0;
+        }
+
+    } else if (direction == 'left') {
+        xtraCarouselItems[(xtraCarouselItems.length - 1) - slidePosition].remove();
+        xtraCarouselArea.insertAdjacentHTML("afterbegin", xtraCarouselItems[(xtraCarouselItems.length - 1) - slidePosition].outerHTML);
+        console.log((xtraCarouselItems.length - 1) - slidePosition)
+
+        slidePosition--
+        currentIndex--
+
+        if (currentIndex < 0) {
+            currentIndex = xtraCarouselItems.length - 1;
+        }
+
+        if (slidePosition < 0) {
+            slidePosition = xtraCarouselItems.length - 1;
+        }
+
+        console.log(slidePosition)
+        console.log(currentIndex)
+      
+    }
+
+    xtraCarouselItems.forEach((item, index) => {
+        if (index == currentIndex) {
+            item.classList.add('highlight')
+        } else {
+            item.classList.remove('highlight')
+        }
+    })
+
+    const dots = document.querySelectorAll('.dot')
+    dots.forEach((item, index) => {
+        if (index == currentIndex) {
+            item.classList.add('active')
+        } else {
+            item.classList.remove('active')
+        }
+    })
+}
+
+xtraCarouselArea.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startPosition = e.clientX;
+});
+
+xtraCarouselArea.addEventListener('mousemove', e => {
+    if (isDragging) {
+        const currentPosition = e.clientX;
+        currentTranslate = prevTranslate + currentPosition - startPosition;
     }
 });
 
-console.log(visibleItems)
+xtraCarouselArea.addEventListener('mouseup', () => {
+    isDragging = false;
+
+    if (currentTranslate < prevTranslate) {
+        handleCarousel('right')
+    } else if (currentTranslate > prevTranslate) {
+        handleCarousel('left')
+    }
+
+    prevTranslate = currentTranslate;
+});
+
+xtraCarouselArea.addEventListener('mouseleave', () => {
+    isDragging = false;
+});
+
+const handleHighlight = () => {
+    xtraCarouselItems.forEach((item, index) => {
+        if (index == currentIndex) {
+            item.classList.add('highlight')
+        } else {
+            item.classList.remove('highlight')
+        }
+    })
+}
+
+handleHighlight();
+
+const createDots = () => {
+    for (i = 0; i < xtraCarouselItems.length; i++) {
+        const dot = document.createElement('span');
+        dot.classList.add('dot');
+
+        if (i == (currentIndex)) {
+            dot.classList.add('active')
+        }
+
+        dotsArea.appendChild(dot);
+    }
+}
+
+createDots();
 // xtra carousel
 
 // pop up

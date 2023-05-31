@@ -52,9 +52,7 @@
     justify-content: flex-start;
     height: 100%;
     width: 100%;
-    flex: 0 1 auto;
     scroll-behavior: smooth;
-    overflow-x: clip;
     scroll-snap-type: x mandatory;
 }
 
@@ -64,9 +62,12 @@
     justify-content: center;
     width: 100%;
     margin: 0 12px 0;
-    flex-shrink: 1;
     filter: brightness(0.7);
     scroll-snap-align: center;
+    pointer-events: none;
+    flex-shrink: 1;
+    transition: all .3s;
+    user-select: none;
 }
 
 .xtra_carousel .xtra_items .xra_item.highlight {
