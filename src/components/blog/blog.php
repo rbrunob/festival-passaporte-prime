@@ -1,6 +1,6 @@
 <section id="blog">
     <div class="blog_row">
-        <h1 class="blog_title"></h1>
+        <h1 class="blog_title">Passaporte <span>news</span></h1>
         <div class="blog_carousel">
             <div class="prev">
                 <svg width="27" height="47" viewBox="0 0 27 47" fill="none" xmlns="http://www.w3.org/2000/svg">
