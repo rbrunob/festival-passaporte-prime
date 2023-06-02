@@ -16,7 +16,7 @@
     <? include("./src/components/header/header.php") ?>
 
     <main>
-        
+        <? include("./src/components/carousel-fullitem/full-item.php") ?>
         <? include("./src/components/channels/channels.php") ?>
         <? include("./src/components/cmg/cmg.php") ?>
     </main>
