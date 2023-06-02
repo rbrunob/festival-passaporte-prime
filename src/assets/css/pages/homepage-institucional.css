@@ -4,3 +4,27 @@
 body {
     background-color: #fff;
 }
+
+#cmg .cmg_row {
+    background-image: url(https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-cmg-institucional.webp);
+}
+
+header {
+    height: auto;
+    position: relative;
+    background-image: linear-gradient(180deg, black 0%, black 27%, black 90%);
+}
+
+header .header_row {
+    height: auto;
+}
+
+.header_logo {
+    height: auto;
+}
+
+.header_logo img {
+    width: 70%;
+    margin: 0 auto;
+    display: block;
+}
