@@ -29,3 +29,7 @@ header .header_row {
     margin: 0 auto;
     display: block;
 }
+
+#channels {
+    box-shadow: inset 0px 0px 0px transparent;
+}
