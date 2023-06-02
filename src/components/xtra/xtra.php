@@ -6,31 +6,31 @@
         </p>
         <div class="xtra_carousel">
             <div class="xtra_items">
-                <div class="xra_item">
+                <div class="xra_item item-0">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_0.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-1">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_1.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-2">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_2.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-3">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_3.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-4">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_4.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-5">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_5.webp" alt="extra image carousel" />
                 </div>
-                <div class="xra_item">
+                <div class="xra_item item-6">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_6.webp" alt="extra image carousel" />
                 </div>
             </div>
 
             <div class="dots">
-         
+
             </div>
         </div>
     </div>

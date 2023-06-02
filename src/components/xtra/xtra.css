@@ -50,22 +50,26 @@
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    height: 100%;
+    height: 230px;
     width: 100%;
     scroll-behavior: smooth;
     scroll-snap-type: x mandatory;
+    flex-shrink: 1;
+    overflow-x: clip;
+    position: relative;
+    cursor: grab;
 }
 
 .xtra_carousel .xtra_items .xra_item {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 100%;
+    width: 18.5%;
     margin: 0 12px 0;
     filter: brightness(0.7);
     scroll-snap-align: center;
     pointer-events: none;
-    flex-shrink: 1;
+    flex-shrink: 0;
     transition: all .3s;
     user-select: none;
 }
@@ -83,6 +87,7 @@
 .xtra_carousel .xtra_items .xra_item img {
     border-radius: 20px;
     filter: drop-shadow(2px 4px 6px black);
+    width: 100%;
 }
 
 .xtra_carousel .dots {
@@ -126,4 +131,8 @@
     background-image: linear-gradient(270deg, black 5%, transparent 95%);
     right: 0;
     z-index: 1;
+}
+
+.xtra_carousel .xtra_items .xra_item.hidden {
+    width: 0;
 }

@@ -171,103 +171,18 @@ const dotsArea = document.querySelector('.dots');
 const xtraCarouselArea = document.querySelector('.xtra_items');
 const xtraCarouselItems = document.querySelectorAll('.xra_item');
 
-let currentIndex = 2
 let isDragging = false;
 let startPosition = 0;
 let currentTranslate = 0;
 let prevTranslate = 0;
-let slidePosition = 0;
-
-function handleCarousel(direction) {
-
-    if (direction == 'right') {
-        xtraCarouselItems[slidePosition].remove();
-        xtraCarouselArea.appendChild(xtraCarouselItems[slidePosition]);
-
-        slidePosition++
-        currentIndex++
-
-        if (currentIndex == xtraCarouselItems.length) {
-            currentIndex = 0;
-        }
-
-        if (slidePosition == xtraCarouselItems.length) {
-            slidePosition = 0;
-        }
-
-    } else if (direction == 'left') {
-        xtraCarouselItems[(xtraCarouselItems.length - 1) - slidePosition].remove();
-        xtraCarouselArea.insertAdjacentHTML("afterbegin", xtraCarouselItems[(xtraCarouselItems.length - 1) - slidePosition].outerHTML);
-        console.log((xtraCarouselItems.length - 1) - slidePosition)
-
-        slidePosition--
-        currentIndex--
-
-        if (currentIndex < 0) {
-            currentIndex = xtraCarouselItems.length - 1;
-        }
-
-        if (slidePosition < 0) {
-            slidePosition = xtraCarouselItems.length - 1;
-        }
-
-        console.log(slidePosition)
-        console.log(currentIndex)
-      
-    }
-
-    xtraCarouselItems.forEach((item, index) => {
-        if (index == currentIndex) {
-            item.classList.add('highlight')
-        } else {
-            item.classList.remove('highlight')
-        }
-    })
-
-    const dots = document.querySelectorAll('.dot')
-    dots.forEach((item, index) => {
-        if (index == currentIndex) {
-            item.classList.add('active')
-        } else {
-            item.classList.remove('active')
-        }
-    })
-}
-
-xtraCarouselArea.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startPosition = e.clientX;
-});
-
-xtraCarouselArea.addEventListener('mousemove', e => {
-    if (isDragging) {
-        const currentPosition = e.clientX;
-        currentTranslate = prevTranslate + currentPosition - startPosition;
-    }
-});
-
-xtraCarouselArea.addEventListener('mouseup', () => {
-    isDragging = false;
-
-    if (currentTranslate < prevTranslate) {
-        handleCarousel('right')
-    } else if (currentTranslate > prevTranslate) {
-        handleCarousel('left')
-    }
-
-    prevTranslate = currentTranslate;
-});
-
-xtraCarouselArea.addEventListener('mouseleave', () => {
-    isDragging = false;
-});
+let currentIndex = 0;
 
 const handleHighlight = () => {
-    xtraCarouselItems.forEach((item, index) => {
-        if (index == currentIndex) {
-            item.classList.add('highlight')
+    xtraCarouselItems.forEach(item => {
+        if (item.classList.contains('item-2')) {
+            item.classList.add('highlight');
         } else {
-            item.classList.remove('highlight')
+            item.classList.remove('highlight');
         }
     })
 }
@@ -288,6 +203,116 @@ const createDots = () => {
 }
 
 createDots();
+
+function handleCarousel(direction) {
+    let areaItems = document.querySelector(".xtra_items");
+    let allItems = areaItems.querySelectorAll('.xra_item');
+    let itemChange;
+
+    for (i = 0; i < allItems.length; i++) {
+        if (allItems[i].classList.contains('highlight')) {
+            allItems[i].classList.remove('highlight');
+        }
+    }
+
+    if (direction == 'left') {
+        currentIndex--
+
+        if (currentIndex < 0) {
+            currentIndex = allItems.length - 1
+        }
+
+        itemChange = allItems[allItems.length - 1];
+        allItems[allItems.length - 1].remove();
+        areaItems.insertAdjacentElement("afterbegin", itemChange);
+        allItems = areaItems.querySelectorAll('.xra_item');
+        allItems[0].classList.add('hidden');
+        allItems[5].classList.add('hidden');
+        setTimeout(function () {
+            allItems[5].classList.remove('hidden');
+        }, 400)
+
+        allItems = areaItems.querySelectorAll('.xra_item');
+        setTimeout(function () {
+            allItems[2].classList.add('highlight');
+            for (i = 0; i < allItems.length; i++) {
+                if (allItems[0].classList.contains('hidden')) {
+                    allItems[0].classList.remove('hidden');
+                }
+            }
+        }, 10)
+
+        console.log('left')
+
+    } else if (direction == 'right') {
+        currentIndex++
+
+        if (currentIndex > allItems.length - 1) {
+            currentIndex = 0;
+        }
+
+        allItems = areaItems.querySelectorAll('.xra_item');
+        itemChange = allItems[0];
+        allItems[0].classList.add('hidden')
+        setTimeout(function () {
+            allItems[0].remove();
+            areaItems.insertAdjacentElement("beforeend", itemChange);
+        }, 300)
+
+        allItems = areaItems.querySelectorAll('.xra_item');
+        allItems[3].classList.add('highlight');
+        setTimeout(function () {
+            for (i = 0; i < allItems.length; i++) {
+                if (allItems[i].classList.contains('hidden')) {
+                    allItems[i].classList.remove('hidden');
+                }
+            }
+        }, 300)
+
+        console.log('right')
+    }
+
+    let allDots = document.querySelectorAll('.dots .dot');
+
+    allDots.forEach((item, index) => {
+        if (index == currentIndex) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+    })
+
+}
+
+xtraCarouselArea.addEventListener('mousedown', (e) => {
+    isDragging = true;
+    startPosition = e.clientX;
+    xtraCarouselArea.style.cursor = "grabbing"
+});
+
+xtraCarouselArea.addEventListener('mousemove', e => {
+    if (isDragging) {
+        const currentPosition = e.clientX;
+        currentTranslate = prevTranslate + currentPosition - startPosition;
+    }
+});
+
+xtraCarouselArea.addEventListener('mouseup', () => {
+    isDragging = false;
+    xtraCarouselArea.style.cursor = "grab"
+
+    if (currentTranslate < prevTranslate) {
+        handleCarousel('right')
+    } else if (currentTranslate > prevTranslate) {
+        handleCarousel('left')
+    }
+
+    prevTranslate = currentTranslate;
+});
+
+xtraCarouselArea.addEventListener('mouseleave', () => {
+    isDragging = false;
+});
 // xtra carousel
 
 // pop up
