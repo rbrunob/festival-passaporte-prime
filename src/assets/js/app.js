@@ -113,18 +113,19 @@ search.addEventListener('click', () => {
 const buttonSinopse = document.querySelector('.sinopse_button');
 const sinopseArea = document.querySelector('.sinopse_area');
 const sinopse = document.querySelector('#sinopse');
+if (sinopse) {
+    buttonSinopse.addEventListener('click', () => {
+        if (sinopseArea.classList.contains('active')) {
+            sinopseArea.classList.remove('active');
+            buttonSinopse.classList.remove('active');
+            location.href = '#sinopse'
 
-buttonSinopse.addEventListener('click', () => {
-    if (sinopseArea.classList.contains('active')) {
-        sinopseArea.classList.remove('active');
-        buttonSinopse.classList.remove('active');
-        location.href = '#sinopse'
-
-    } else {
-        sinopseArea.classList.add('active');
-        buttonSinopse.classList.add('active');
-    }
-})
+        } else {
+            sinopseArea.classList.add('active');
+            buttonSinopse.classList.add('active');
+        }
+    })
+}
 
 // characters effect
 const buttonCharacters = document.querySelectorAll('.character_button');
@@ -141,178 +142,183 @@ const carouselArea = document.querySelector('.carousel_area');
 const characters = document.querySelectorAll('.character_item');
 const prev = document.querySelector('.carousel .prev');
 const next = document.querySelector('.carousel .next');
+if (carouselArea) {
 
-prev.addEventListener('click', () => {
-    carouselArea.scrollLeft -= carouselArea.offsetWidth;
-})
+    prev.addEventListener('click', () => {
+        carouselArea.scrollLeft -= carouselArea.offsetWidth;
+    })
 
-next.addEventListener('click', () => {
-    carouselArea.scrollLeft += carouselArea.offsetWidth;
-})
+    next.addEventListener('click', () => {
+        carouselArea.scrollLeft += carouselArea.offsetWidth;
+    })
 
-let screenWidth = window.screen.width;
-let quantity;
+    let screenWidth = window.screen.width;
+    let quantity;
 
-if (screenWidth <= 540) {
-    quantity = 1;
-} else if (screenWidth <= 1000) {
-    quantity = 3
-} else {
-    quantity = 4;
+    if (screenWidth <= 540) {
+        quantity = 1;
+    } else if (screenWidth <= 1000) {
+        quantity = 3
+    } else {
+        quantity = 4;
+    }
+
+    let width = 100 / quantity;
+    characters.forEach((item) => {
+        item.style.width = `calc(${width}% - 20px)`;
+    });
+
 }
-
-let width = 100 / quantity;
-characters.forEach((item) => {
-    item.style.width = `calc(${width}% - 20px)`;
-});
 
 // xtra carousel
 const dotsArea = document.querySelector('.dots');
 const xtraCarouselArea = document.querySelector('.xtra_items');
 const xtraCarouselItems = document.querySelectorAll('.xra_item');
+if (xtraCarouselArea) {
 
-let isDragging = false;
-let startPosition = 0;
-let currentTranslate = 0;
-let prevTranslate = 0;
-let currentIndex = 0;
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let currentIndex = 0;
 
-const handleHighlight = () => {
-    xtraCarouselItems.forEach(item => {
-        if (item.classList.contains('item-2')) {
-            item.classList.add('highlight');
-        } else {
-            item.classList.remove('highlight');
-        }
-    })
-}
-
-handleHighlight();
-
-const createDots = () => {
-    for (i = 0; i < xtraCarouselItems.length; i++) {
-        const dot = document.createElement('span');
-        dot.classList.add('dot');
-
-        if (i == (currentIndex)) {
-            dot.classList.add('active')
-        }
-
-        dotsArea.appendChild(dot);
-    }
-}
-
-createDots();
-
-function handleCarousel(direction) {
-    let areaItems = document.querySelector(".xtra_items");
-    let allItems = areaItems.querySelectorAll('.xra_item');
-    let itemChange;
-
-    for (i = 0; i < allItems.length; i++) {
-        if (allItems[i].classList.contains('highlight')) {
-            allItems[i].classList.remove('highlight');
-        }
-    }
-
-    if (direction == 'left') {
-        currentIndex--
-
-        if (currentIndex < 0) {
-            currentIndex = allItems.length - 1
-        }
-
-        itemChange = allItems[allItems.length - 1];
-        allItems[allItems.length - 1].remove();
-        areaItems.insertAdjacentElement("afterbegin", itemChange);
-        allItems = areaItems.querySelectorAll('.xra_item');
-        allItems[0].classList.add('hidden');
-        allItems[5].classList.add('hidden');
-        setTimeout(function () {
-            allItems[5].classList.remove('hidden');
-        }, 400)
-
-        allItems = areaItems.querySelectorAll('.xra_item');
-        setTimeout(function () {
-            allItems[2].classList.add('highlight');
-            for (i = 0; i < allItems.length; i++) {
-                if (allItems[0].classList.contains('hidden')) {
-                    allItems[0].classList.remove('hidden');
-                }
+    const handleHighlight = () => {
+        xtraCarouselItems.forEach(item => {
+            if (item.classList.contains('item-2')) {
+                item.classList.add('highlight');
+            } else {
+                item.classList.remove('highlight');
             }
-        }, 10)
+        })
+    }
 
-        console.log('left')
+    handleHighlight();
 
-    } else if (direction == 'right') {
-        currentIndex++
+    const createDots = () => {
+        for (i = 0; i < xtraCarouselItems.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
 
-        if (currentIndex > allItems.length - 1) {
-            currentIndex = 0;
-        }
-
-        allItems = areaItems.querySelectorAll('.xra_item');
-        itemChange = allItems[0];
-        allItems[0].classList.add('hidden')
-        setTimeout(function () {
-            allItems[0].remove();
-            areaItems.insertAdjacentElement("beforeend", itemChange);
-        }, 300)
-
-        allItems = areaItems.querySelectorAll('.xra_item');
-        allItems[3].classList.add('highlight');
-        setTimeout(function () {
-            for (i = 0; i < allItems.length; i++) {
-                if (allItems[i].classList.contains('hidden')) {
-                    allItems[i].classList.remove('hidden');
-                }
+            if (i == (currentIndex)) {
+                dot.classList.add('active')
             }
-        }, 300)
 
-        console.log('right')
-    }
-
-    let allDots = document.querySelectorAll('.dots .dot');
-
-    allDots.forEach((item, index) => {
-        if (index == currentIndex) {
-            item.classList.add('active');
-        } else {
-            item.classList.remove('active');
+            dotsArea.appendChild(dot);
         }
-    })
+    }
 
+    createDots();
+
+    function handleCarousel(direction) {
+        let areaItems = document.querySelector(".xtra_items");
+        let allItems = areaItems.querySelectorAll('.xra_item');
+        let itemChange;
+
+        for (i = 0; i < allItems.length; i++) {
+            if (allItems[i].classList.contains('highlight')) {
+                allItems[i].classList.remove('highlight');
+            }
+        }
+
+        if (direction == 'left') {
+            currentIndex--
+
+            if (currentIndex < 0) {
+                currentIndex = allItems.length - 1
+            }
+
+            itemChange = allItems[allItems.length - 1];
+            allItems[allItems.length - 1].remove();
+            areaItems.insertAdjacentElement("afterbegin", itemChange);
+            allItems = areaItems.querySelectorAll('.xra_item');
+            allItems[0].classList.add('hidden');
+            allItems[5].classList.add('hidden');
+            setTimeout(function () {
+                allItems[5].classList.remove('hidden');
+            }, 400)
+
+            allItems = areaItems.querySelectorAll('.xra_item');
+            setTimeout(function () {
+                allItems[2].classList.add('highlight');
+                for (i = 0; i < allItems.length; i++) {
+                    if (allItems[0].classList.contains('hidden')) {
+                        allItems[0].classList.remove('hidden');
+                    }
+                }
+            }, 10)
+
+            console.log('left')
+
+        } else if (direction == 'right') {
+            currentIndex++
+
+            if (currentIndex > allItems.length - 1) {
+                currentIndex = 0;
+            }
+
+            allItems = areaItems.querySelectorAll('.xra_item');
+            itemChange = allItems[0];
+            allItems[0].classList.add('hidden')
+            setTimeout(function () {
+                allItems[0].remove();
+                areaItems.insertAdjacentElement("beforeend", itemChange);
+            }, 300)
+
+            allItems = areaItems.querySelectorAll('.xra_item');
+            allItems[3].classList.add('highlight');
+            setTimeout(function () {
+                for (i = 0; i < allItems.length; i++) {
+                    if (allItems[i].classList.contains('hidden')) {
+                        allItems[i].classList.remove('hidden');
+                    }
+                }
+            }, 300)
+
+            console.log('right')
+        }
+
+        let allDots = document.querySelectorAll('.dots .dot');
+
+        allDots.forEach((item, index) => {
+            if (index == currentIndex) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        })
+
+    }
+
+    xtraCarouselArea.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startPosition = e.clientX;
+        xtraCarouselArea.style.cursor = "grabbing"
+    });
+
+    xtraCarouselArea.addEventListener('mousemove', e => {
+        if (isDragging) {
+            const currentPosition = e.clientX;
+            currentTranslate = prevTranslate + currentPosition - startPosition;
+        }
+    });
+
+    xtraCarouselArea.addEventListener('mouseup', () => {
+        isDragging = false;
+        xtraCarouselArea.style.cursor = "grab"
+
+        if (currentTranslate < prevTranslate) {
+            handleCarousel('right')
+        } else if (currentTranslate > prevTranslate) {
+            handleCarousel('left')
+        }
+
+        prevTranslate = currentTranslate;
+    });
+
+    xtraCarouselArea.addEventListener('mouseleave', () => {
+        isDragging = false;
+    });
 }
-
-xtraCarouselArea.addEventListener('mousedown', (e) => {
-    isDragging = true;
-    startPosition = e.clientX;
-    xtraCarouselArea.style.cursor = "grabbing"
-});
-
-xtraCarouselArea.addEventListener('mousemove', e => {
-    if (isDragging) {
-        const currentPosition = e.clientX;
-        currentTranslate = prevTranslate + currentPosition - startPosition;
-    }
-});
-
-xtraCarouselArea.addEventListener('mouseup', () => {
-    isDragging = false;
-    xtraCarouselArea.style.cursor = "grab"
-
-    if (currentTranslate < prevTranslate) {
-        handleCarousel('right')
-    } else if (currentTranslate > prevTranslate) {
-        handleCarousel('left')
-    }
-
-    prevTranslate = currentTranslate;
-});
-
-xtraCarouselArea.addEventListener('mouseleave', () => {
-    isDragging = false;
-});
 // xtra carousel
 
 // pop up
@@ -344,14 +350,15 @@ galleryItems.forEach(item => {
 })
 
 const teaserButton = document.querySelector('.carousel_button button');
+if (teaserButton) {
 
-teaserButton.addEventListener('click', () => {
-    popup.style.visibility = 'visible';
-    popup.style.opacity = '1';
+    teaserButton.addEventListener('click', () => {
+        popup.style.visibility = 'visible';
+        popup.style.opacity = '1';
 
-    const src = "https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/teaser-passaporte-prime.mp4"
+        const src = "https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/teaser-passaporte-prime.mp4"
 
-    popup.innerHTML = `
+        popup.innerHTML = `
     <div class='close'></div>
     <div class="popup_row">
         <div class="popup_content">
@@ -360,12 +367,110 @@ teaserButton.addEventListener('click', () => {
     </div>
     `;
 
-    document.querySelector('.close').addEventListener('click', handleClose);
-})
+        document.querySelector('.close').addEventListener('click', handleClose);
+    })
 
-body.appendChild(popup);
+    body.appendChild(popup);
 
-const handleClose = () => {
-    popup.style.visibility = 'hidden'
-    popup.style.opacity = '0'
+    const handleClose = () => {
+        popup.style.visibility = 'hidden'
+        popup.style.opacity = '0'
+    }
+
+}
+
+const fullItemsCarouselArea = document.getElementById('full-item');
+
+if (fullItemsCarouselArea) {
+    const fullItemsCarouselAreaItems = document.querySelector('.full-item-items');
+    const fullItemsCarouselItems = document.querySelectorAll('.full-item-items .item');
+    const areaDots = document.querySelector('.dots-full-item');
+
+    let isDragging = false;
+    let startPosition = 0;
+    let currentTranslate = 0;
+    let prevTranslate = 0;
+    let currentIndex = 0;
+
+    const createDots = () => {
+        for (i = 0; i < fullItemsCarouselItems.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dot');
+
+            if (i == (currentIndex)) {
+                dot.classList.add('active')
+            }
+
+            areaDots.appendChild(dot);
+        }
+    }
+
+    createDots();
+
+    function handleCarousel(direction) {
+        if (direction == 'left') {
+            currentIndex--
+
+            if (currentIndex < 0) {
+                currentIndex = fullItemsCarouselItems.length - 1
+            }
+
+            fullItemsCarouselAreaItems.scrollLeft += fullItemsCarouselAreaItems.offsetWidth;
+        } else if (direction == 'right') {
+            currentIndex++
+
+            if (currentIndex > fullItemsCarouselItems.length - 1) {
+                currentIndex = 0;
+            }
+
+            fullItemsCarouselAreaItems.scrollLeft -= fullItemsCarouselAreaItems.offsetWidth;
+        }
+
+        let allDots = document.querySelectorAll('.dots-full-item .dot');
+
+        allDots.forEach((item, index) => {
+            if (index == currentIndex) {
+                item.classList.add('active');
+            } else {
+                item.classList.remove('active');
+            }
+        })
+    }
+
+    let quantity = 1;
+
+    let width = 100 / quantity;
+    fullItemsCarouselItems.forEach((item) => {
+        item.style.width = `calc(${width}%)`;
+    });
+
+    fullItemsCarouselAreaItems.addEventListener('mousedown', (e) => {
+        isDragging = true;
+        startPosition = e.clientX;
+        fullItemsCarouselAreaItems.style.cursor = "grabbing"
+    });
+
+    fullItemsCarouselAreaItems.addEventListener('mousemove', e => {
+        if (isDragging) {
+            const currentPosition = e.clientX;
+            currentTranslate = prevTranslate + currentPosition - startPosition;
+        }
+    });
+
+    fullItemsCarouselAreaItems.addEventListener('mouseup', () => {
+        isDragging = false;
+        fullItemsCarouselAreaItems.style.cursor = "grab"
+
+        if (currentTranslate < prevTranslate) {
+            handleCarousel('right')
+        } else if (currentTranslate > prevTranslate) {
+            handleCarousel('left')
+        }
+
+        prevTranslate = currentTranslate;
+    });
+
+    fullItemsCarouselAreaItems.addEventListener('mouseleave', () => {
+        isDragging = false;
+    });
 }
