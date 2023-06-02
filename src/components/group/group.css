@@ -1,0 +1,59 @@
+#group {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url(https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-box-brazil-institucional.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#group .group_row {
+    width: 70%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 5% 0;
+    height: auto;
+    margin: 0 auto;
+    gap: 50px;
+}
+
+.group_row .group_content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    width: 40%;
+}
+
+.group_content .group_title {
+    font-size: 32px;
+    font-weight: 600;
+    color: #676767;
+    text-align: start;
+}
+
+.group_content .group_description {
+    font-size: 18px;
+    line-height: 170%;
+    text-align: start;
+    color: #676767;
+    font-weight: 300;
+}
+
+.group_row .group_image {
+    width: 50%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.group_row .group_image img {
+    width: 80%;
+    height: auto;
+    position: relative;
+    top: -20px;
+}
