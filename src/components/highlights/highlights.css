@@ -1,0 +1,108 @@
+#highlights {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#highlights .highlights_row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 3% 0;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.highlights_row .highlights_title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 39px;
+    text-transform: uppercase;
+    color: #777779;
+}
+
+.highlights_row .highlights_title span {
+    font-size: 20px;
+    font-weight: 300;
+}
+
+.highlights_row .highlights_description {
+    text-align: center;
+    line-height: 170%;
+    color: #676767;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.highlights_row .carousel_highlight {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+    gap: 20px;
+}
+
+.carousel_highlight .carousel_actions_highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+}
+
+.carousel_highlight .carousel_actions_highlights .prev_h,
+.next_h {
+    cursor: pointer;
+}
+
+.carousel_highlight .items_highlights {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 550px;
+    position: relative;
+}
+
+.carousel_highlight .items_highlights .item {
+    height: 520px;
+    width: 385px;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    border-radius: 20px;
+    transition: all .3s ease-in-out;
+    flex-shrink: 0;
+}
+
+.carousel_highlight .items_highlights .item img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel_highlight .items_highlights .item.item-0 {
+    transform: translateX(0%) scale(1);
+    z-index: 1;
+    filter: brightness(1);
+}
+
+.carousel_highlight .items_highlights .item.item-1 {
+    transform: translateX(-50%) scale(.8);
+    z-index: 0;
+    filter: brightness(.6);
+}
+
+.carousel_highlight .items_highlights .item.item-2 {
+    transform: translateX(50%) scale(.8);
+    z-index: 0;
+    filter: brightness(.6);
+}

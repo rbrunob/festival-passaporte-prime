@@ -476,3 +476,57 @@ if (fullItemsCarouselArea) {
         isDragging = false;
     });
 }
+
+const highlights = document.getElementById('highlights');
+
+if (highlights) {
+    let index = 0
+
+    const prev = document.querySelector(".carousel_actions_highlights .prev_h")
+    const next = document.querySelector(".carousel_actions_highlights .next_h")
+
+    next.addEventListener("click", () => {
+        index++
+
+        if (index > 2) {
+            index = 0
+        }
+
+        handleCarousel(index)
+    })
+
+    prev.addEventListener("click", () => {
+        index--
+
+        if (index < 0) {
+            index = 2
+        }
+
+        handleCarousel(index)
+    })
+
+
+    const items = document.querySelectorAll(".items_highlights .item");
+
+    function handleCarousel(index) {
+        for (i = 0; i < items.length; i++) {
+            switch (index) {
+                case 0:
+                    items[0].classList.replace(`item-${i}`, "item-0");
+                    items[1].classList.replace(`item-${i}`, "item-1");
+                    items[2].classList.replace(`item-${i}`, "item-2");
+                    break;
+                case 1:
+                    items[0].classList.replace(`item-${i}`, "item-2");
+                    items[1].classList.replace(`item-${i}`, "item-0");
+                    items[2].classList.replace(`item-${i}`, "item-1");
+                    break;
+                case 2:
+                    items[0].classList.replace(`item-${i}`, "item-1");
+                    items[1].classList.replace(`item-${i}`, "item-2");
+                    items[2].classList.replace(`item-${i}`, "item-0");
+            }
+        }
+    }
+
+}

@@ -6,13 +6,13 @@
         </p>
         <div class="carousel_highlight">
             <div class="items_highlights">
-                <div class="item">
+                <div class="item item-0">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="highlight" />
                 </div>
-                <div class="item">
+                <div class="item item-1">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-02.webp" alt="highlight" />
                 </div>
-                <div class="item">
+                <div class="item item-2">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-03.webp" alt="highlight" />
                 </div>
             </div>
