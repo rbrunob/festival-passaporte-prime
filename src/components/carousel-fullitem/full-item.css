@@ -22,6 +22,7 @@
     justify-content: center;
     flex-direction: column;
     box-shadow: 0 0 10px #0000004f;
+    position: relative;
 }
 
 .full-item-content .full-item-items {
@@ -41,12 +42,16 @@
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
+    pointer-events: none;
+    user-select: none;
 }
 
 .full-item-items .item img {
     width: 100%;
     height: auto;
     margin: 0 auto;
+    user-select: none;
+    pointer-events: none;
 }
 
 .full-item-content .dots-full-item {
@@ -55,4 +60,20 @@
     justify-content: center;
     width: 200px;
     height: auto;
+    z-index: 1;
+    gap: 10px;
+    position: absolute;
+    bottom: 25%;
+    pointer-events: none;
+}
+
+.full-item-content .dots-full-item .dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff61;
+}
+
+.full-item-content .dots-full-item .dot.active {
+    background-color: #fff;
 }

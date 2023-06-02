@@ -409,21 +409,17 @@ if (fullItemsCarouselArea) {
 
     function handleCarousel(direction) {
         if (direction == 'left') {
-            currentIndex--
-
-            if (currentIndex < 0) {
-                currentIndex = fullItemsCarouselItems.length - 1
-            }
-
-            fullItemsCarouselAreaItems.scrollLeft += fullItemsCarouselAreaItems.offsetWidth;
-        } else if (direction == 'right') {
             currentIndex++
 
-            if (currentIndex > fullItemsCarouselItems.length - 1) {
-                currentIndex = 0;
-            }
+            fullItemsCarouselAreaItems.scrollLeft += fullItemsCarouselAreaItems.offsetWidth;
+
+            console.log(currentIndex)
+        } else if (direction == 'right') {
+            currentIndex--
 
             fullItemsCarouselAreaItems.scrollLeft -= fullItemsCarouselAreaItems.offsetWidth;
+
+            console.log(currentIndex)
         }
 
         let allDots = document.querySelectorAll('.dots-full-item .dot');
@@ -452,6 +448,7 @@ if (fullItemsCarouselArea) {
 
     fullItemsCarouselAreaItems.addEventListener('mousemove', e => {
         if (isDragging) {
+            fullItemsCarouselAreaItems.style.cursor = "grabbing"
             const currentPosition = e.clientX;
             currentTranslate = prevTranslate + currentPosition - startPosition;
         }
@@ -462,9 +459,14 @@ if (fullItemsCarouselArea) {
         fullItemsCarouselAreaItems.style.cursor = "grab"
 
         if (currentTranslate < prevTranslate) {
-            handleCarousel('right')
+            if (currentIndex < fullItemsCarouselItems.length - 1) {
+                handleCarousel('left')
+            }
         } else if (currentTranslate > prevTranslate) {
-            handleCarousel('left')
+
+            if (currentIndex > 0) {
+                handleCarousel('right')
+            }
         }
 
         prevTranslate = currentTranslate;
