@@ -528,5 +528,37 @@ if (highlights) {
             }
         }
     }
+}
 
+const blog = document.querySelector("#blog");
+
+if (blog) {
+    const previusarrow = document.querySelector(".blog_carousel .prev");
+    const nextarrow = document.querySelector(".blog_carousel .next");
+
+    const carousel = document.querySelector(".blog_carousel_items");
+    const items = document.querySelectorAll(".blog_carousel_items .item");
+
+    previusarrow.addEventListener('click', () => {
+        carousel.scrollLeft -= carousel.offsetWidth;
+    });
+    nextarrow.addEventListener('click', () => {
+        carousel.scrollLeft += carousel.offsetWidth;
+    });
+
+    let screenWidth = window.screen.width;
+    let quantity;
+
+    if (screenWidth <= 540) {
+        quantity = 1;
+    } else if (screenWidth <= 1000) {
+        quantity = 3
+    } else {
+        quantity = 4;
+    }
+
+    let width = 100 / quantity;
+    items.forEach((item) => {
+        item.style.width = `calc(${width}% - 20px)`;
+    });
 }
