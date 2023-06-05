@@ -559,6 +559,6 @@ if (blog) {
 
     let width = 100 / quantity;
     items.forEach((item) => {
-        item.style.width = `calc(${width}% - 20px)`;
+        item.style.width = `calc(${width}% - 40px)`;
     });
 }
