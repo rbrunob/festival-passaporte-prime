@@ -37,6 +37,7 @@ header {
     top: 0;
     left: 0;
     background-image: linear-gradient(180deg, black 0%, #000a28d6 27%, transparent 90%);
+    z-index: 1;
 }
 
 header .header_row {

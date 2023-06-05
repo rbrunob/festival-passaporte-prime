@@ -1,0 +1,70 @@
+#fullwidth {
+    width: 100%;
+    height: auto;
+    position: relative;
+}
+
+#fullwidth .fullwidth_row {
+    width: 100%;
+    height: 930px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fullwidth_row .carousel_fullwidth {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex: 0 1 auto;
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+
+.fullwidth_row .carousel_fullwidth .item {
+    width: 100%;
+    height: auto;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    opacity: 0;
+    transition: all .25s;
+}
+
+.fullwidth_row .carousel_fullwidth .item.active {
+    opacity: 1;
+}
+
+.fullwidth_row .carousel_fullwidth .item img {
+    width: 100%;
+    height: auto;
+}
+
+.fullwidth_row .dotsfull {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    height: auto;
+    z-index: 1;
+    gap: 10px;
+    position: absolute;
+    bottom: 25%;
+}
+
+.fullwidth_row .dotsfull .dotfull {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #ffffff61;
+    cursor: pointer;
+}
+
+.fullwidth_row .dotsfull .dotfull.active {
+    background-color: #fff;
+}

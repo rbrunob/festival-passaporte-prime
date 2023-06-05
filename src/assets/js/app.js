@@ -413,13 +413,11 @@ if (fullItemsCarouselArea) {
 
             fullItemsCarouselAreaItems.scrollLeft += fullItemsCarouselAreaItems.offsetWidth;
 
-            console.log(currentIndex)
         } else if (direction == 'right') {
             currentIndex--
 
             fullItemsCarouselAreaItems.scrollLeft -= fullItemsCarouselAreaItems.offsetWidth;
 
-            console.log(currentIndex)
         }
 
         let allDots = document.querySelectorAll('.dots-full-item .dot');
@@ -561,4 +559,63 @@ if (blog) {
     items.forEach((item) => {
         item.style.width = `calc(${width}% - 40px)`;
     });
+}
+
+const carouselFullWidth = document.getElementById('fullwidth');
+
+if (carouselFullWidth) {
+    const items = document.querySelectorAll('.carousel_fullwidth .item');
+    const dots = document.querySelector('.fullwidth_row .dotsfull');
+
+    let currentIndex = 0;
+
+    const createDotsFullWidth = () => {
+        for (i = 0; i < items.length; i++) {
+            const dot = document.createElement('span');
+            dot.classList.add('dotfull');
+
+            if (i == (currentIndex)) {
+                dot.classList.add('active');
+                items[0].classList.add('active');
+            }
+
+            dots.appendChild(dot);
+        }
+    }
+
+    createDotsFullWidth();
+
+
+
+    let quantity = 1;
+
+    let width = 100 / quantity;
+
+    items.forEach((item) => {
+        item.style.width = `calc(${width}%)`;
+    });
+
+    let dotsFullWidth = document.querySelectorAll('.fullwidth_row .dotsfull .dotfull');
+
+    dotsFullWidth.forEach((item, index) => {
+        item.addEventListener("click", () => {
+            for (i = 0; i < items.length; i++) {
+                items[i].classList.remove('active');
+                dotsFullWidth[i].classList.remove('active');
+            }
+
+            items[index].classList.add('active');
+            item.classList.add('active');
+        })
+    })
+
+    dotsFullWidth.forEach((item, index) => {
+        if (index == currentIndex) {
+            item.classList.add('active');
+        } else {
+            item.classList.remove('active');
+        }
+
+    })
+
 }
