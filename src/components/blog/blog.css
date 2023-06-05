@@ -1,0 +1,116 @@
+#blog {
+    width: 100%;
+    height: auto;
+    position: relative;
+    background-image: url("https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-blog.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#blog .blog_row {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0;
+    gap: 50px;
+}
+
+.blog_row .blog_carousel {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+
+.blog_carousel .blog_carousel_items {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 0 1 auto;
+}
+
+.blog_carousel_items .item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: calc(100% / 4);
+    margin: 0 20px 0;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+#blog .blog_row .blog_title {
+    width: 100%;
+    height: auto;
+    text-align: center;
+    font-size: 40px;
+    color: white;
+    text-transform: uppercase;
+    font-weight: 600;
+    text-shadow: 0px 4px 3px #000000a6;
+}
+
+#blog .blog_row .blog_title span {
+    font-weight: 200;
+    font-style: italic;
+}
+
+.blog_carousel .prev svg path {
+    fill: #ffffffa3;
+}
+
+.blog_carousel .next svg path {
+    fill: #ffffffa3;
+}
+
+.blog_carousel_items .item .blog_content {
+    background: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 10px;
+    height: auto;
+    width: 100%;
+}
+
+.blog_carousel_items .item .blog_content .blog_title_news {
+    color: #A4A4A4;
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.blog_carousel_items .item .blog_content .blog_text_news {
+    line-height: 170%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #a4a4a4;
+}
+
+.blog_carousel_items .item .blog_image {
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.blog_carousel_items .item .blog_image img {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.blog_row .blog_carousel .prev {
+    cursor: pointer;
+}
+
+.blog_row .blog_carousel .next {
+    cursor: pointer;
+}
