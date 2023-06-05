@@ -345,7 +345,15 @@ galleryItems.forEach(item => {
         </div>
         `;
 
+        const handleClose = () => {
+            popup.style.visibility = 'hidden'
+            popup.style.opacity = '0'
+        }
+
         document.querySelector('.close').addEventListener('click', handleClose);
+
+
+
     })
 })
 

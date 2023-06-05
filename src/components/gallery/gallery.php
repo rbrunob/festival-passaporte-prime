@@ -2,7 +2,7 @@
     <div class="gallery_row">
         <h1 class="gallery_title">Galeria de fotos</h1>
         <p class="gallery_subtitle">
-            Lorem ipsum dolor sit amet consectetur. Eget faucibus amet eget ut. Et non montes euismod imperdiet vitae justo. Gravida consectetur quis tortor ac a facilisi praesent vestibulum elementum. Pellentesque adipiscing cursus metus nulla proin. Amet.
+            Preparados para embarcar em uma jornada épica repleta de ação, mistério e descobertas? Aqui, reunimos algumas das cenas mais marcantes e visualmente deslumbrantes dessa empolgante saga.
         </p>
         <div class="gallery_area">
             <div class="gallery_items">

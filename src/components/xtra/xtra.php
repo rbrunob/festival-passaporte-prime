@@ -2,7 +2,7 @@
     <div class="xtra_row">
         <h1 class="xtra_title">Extras</h1>
         <p class="xtra_subtitle">
-            Lorem ipsum dolor sit amet consectetur. Eget faucibus amet eget ut. Et non montes euismod imperdiet vitae justo. Gravida consectetur quis tortor ac a facilisi praesent vestibulum elementum. Pellentesque adipiscing cursus metus nulla proin. Amet.
+            Aqui você encontrará uma coleção exclusiva de vídeos que levam você para os bastidores da produção. Prepare-se para embarcar em uma jornada única enquanto revelamos os segredos por trás das cenas de ação, os truques de câmera empolgantes e os momentos divertidos e emocionantes vivenciados pela equipe. Acompanhe o processo de criação dos efeitos especiais, figurinos e maquiagem que transformam o mundo fictício em realidade. Nossa seleção de extras exclusivos permitirá que você mergulhe ainda mais no universo da série.
         </p>
         <div class="xtra_carousel">
             <div class="xtra_items">
