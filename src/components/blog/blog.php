@@ -11,7 +11,7 @@
             <div class="blog_carousel_items">
                 <div class="item">
                     <div class="blog_image">
-                        <img src="" alt="" />
+                        <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-blog-01.webp" alt="image blog" />
                     </div>
                     <div class="blog_content">
                         <h2 class="blog_title_news">Lorem ipsum dolor sit amet</h2>
@@ -22,7 +22,7 @@
                 </div>
                 <div class="item">
                     <div class="blog_image">
-                        <img src="" alt="" />
+                        <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-blog-02.webp" alt="image blog" />
                     </div>
                     <div class="blog_content">
                         <h2 class="blog_title_news">Lorem ipsum dolor sit amet</h2>
@@ -33,7 +33,7 @@
                 </div>
                 <div class="item">
                     <div class="blog_image">
-                        <img src="" alt="" />
+                        <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-blog-03.webp" alt="image blog" />
                     </div>
                     <div class="blog_content">
                         <h2 class="blog_title_news">Lorem ipsum dolor sit amet</h2>
@@ -44,7 +44,7 @@
                 </div>
                 <div class="item">
                     <div class="blog_image">
-                        <img src="" alt="" />
+                        <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-blog-04.webp" alt="image blog" />
                     </div>
                     <div class="blog_content">
                         <h2 class="blog_title_news">Lorem ipsum dolor sit amet</h2>
