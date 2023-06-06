@@ -97,7 +97,14 @@ const updateSlide = () => {
 
 // menu toggle
 const menu = document.querySelector('.menu_toggle');
-menu.addEventListener('click', () => { menu.classList.toggle('active') })
+menu.addEventListener('click', () => {
+    menu.classList.toggle('active')
+    functionHeader.classList.remove('active');
+
+    document.querySelector('main').addEventListener("click", () => {
+        menu.classList.remove('active')
+    })
+})
 
 // open input search
 const search = document.querySelector('.search_icon');
@@ -105,8 +112,14 @@ const functionHeader = document.querySelector('.function_search');
 const inputHeader = document.querySelector('.function_search input');
 
 search.addEventListener('click', () => {
-    functionHeader.classList.toggle('active')
-    inputHeader.focus()
+    functionHeader.classList.toggle('active');
+    inputHeader.focus();
+    menu.classList.remove('active')
+
+    document.querySelector('main').addEventListener("click", () => {
+        functionHeader.classList.remove('active');
+        inputHeader.value = '';
+    })
 })
 
 // open sinopse 

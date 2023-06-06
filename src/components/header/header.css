@@ -14,6 +14,7 @@
     opacity: 0;
     transition: all .25s;
     z-index: 1;
+    pointer-events: auto;
 }
 
 .function_search input[type="text"] {
@@ -38,6 +39,7 @@ header {
     left: 0;
     background-image: linear-gradient(180deg, black 0%, #000a28d6 27%, transparent 90%);
     z-index: 1;
+    pointer-events: none;
 }
 
 header .header_row {
@@ -63,6 +65,7 @@ header .header_row {
 
 .header_logo a {
     text-decoration: none;
+    pointer-events: auto;
 }
 
 .header_logo img {
@@ -94,6 +97,7 @@ header .header_row {
     transition: all .3s;
     cursor: pointer;
     flex-direction: column;
+    pointer-events: auto;
 }
 
 .menu_toggle .toggle_line {
@@ -111,6 +115,7 @@ header .header_row {
     align-items: center;
     position: relative;
     justify-content: center;
+    pointer-events: auto;
 }
 
 .function_search .search_icon {

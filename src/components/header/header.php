@@ -22,25 +22,19 @@
             <nav class="menu_items">
                 <ul class="items">
                     <li class="item">
-                        <a href="index.php" >Home</a>
+                        <a href="index.php">Home</a>
                     </li>
                     <li class="item">
-                        <a href="index.php" >Sobre o Passaporte Prime</a>
+                        <a href="homepage-institucional.php">Sobre o Passaporte Prime</a>
                     </li>
                     <li class="item">
-                        <a href="index.php" >Mostra de Filmes do Japão</a>
-                    </li>
-                    <li class="item">
-                        <a href="index.php" >Destaques Anteriores</a>
+                        <a href="index.php">Mostra de Filmes do Japão</a>
                     </li>
                     <li class="item">
                         <a href="https://triboseimperios.com.br/" target="_blank">Tribos e Impérios</a>
                     </li>
                     <li class="item">
-                        <a href="index.php">Passaporte News</a>
-                    </li>
-                    <li class="item">
-                        <a href="index.php">Fale Conosco</a>
+                        <a href="contato.php">Fale Conosco</a>
                     </li>
                 </ul>
             </nav>
