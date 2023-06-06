@@ -18,9 +18,7 @@
                     <p class="character_name">Medusa</p>
                     <div class="character_description">
                         <p class="description">
-                            Medusa é a rainha da Seita da Serpente . Ao salvar esta poderosa e cruel rainha,
-                            Xiao Yan se torna seu o grande protetor e da tribo do Povo da Serpente que o
-                            nomeiam seu grande Rei. Medusa é absorvida por Xiao Yan e se submete à ele.
+                            Medusa é a rainha da Seita da Serpente . Ao salvar esta poderosa e cruel rainha, Xiao Yan se torna seu o grande protetor e da tribo do Povo da Serpente que o nomeiam seu grande Rei. Medusa é absorvida por Xiao Yan e se submete à ele.
                         </p>
                     </div>
                     <button class="character_button"></button>
@@ -33,10 +31,7 @@
                     <p class="character_name">Yao Chen</p>
                     <div class="character_description">
                         <p class="description">
-                            Yao Chen é o Grande Ancião Mestre da Alquimia e Medicina, considerado um
-                            deus no cultivo da luta Qi. Ele vive no anel que Xiao Yan ganhou de sua mãe,
-                            que era também sua maior discípula. É alegre e brincalhão e quer o melhor
-                            para seu discípulo, mas quando necessário é muito severo.
+                            É o Grande Ancião Mestre da Alquimia e Medicina, considerado um deus no cultivo da luta Qi. Vive no anel que Xiao Yan ganhou de sua mãe, que era também sua maior discípula. É alegre e brincalhão, mas quando necessário é muito severo.
                         </p>
                     </div>
                     <button class="character_button"></button>
@@ -49,12 +44,7 @@
                     <p class="character_name">Xiao Xun`er</p>
                     <div class="character_description">
                         <p class="description">
-                            Xiao Xun’ Er / Gu Xun Er é uma das principais protagonistas femininas de
-                            Lutas Céu Afora. Apoiou Xiao Yan mesmo quando ele estava fraco em suas
-                            habilidades. Uma jovem que passou a infância no Clã Xiao e também uma
-                            lutadora talentosa. Ela é a herdeira número um do Clã Gu e a única possuidora
-                            do sangue Dou Di Perfeito no clã Gu nos últimos 1000 anos e também herdeira
-                            da força da Mãe Dragão.
+                            É a herdeira do Clã Gu e a única possuidora do sangue Dou Di Perfeito no clã Gu nos últimos 1000 anos e também da força da Mãe Dragão. É a única que apoiou Xiao Yan quando ele estava fraco em suas habilidades.
                         </p>
                     </div>
                     <button class="character_button"></button>
@@ -64,18 +54,10 @@
                     <div class="character_image">
                         <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/character-image-4.webp" alt="personagem 4" />
                     </div>
-                    <p class="character_name">Xiao Yao</p>
+                    <p class="character_name">Xiao Yan</p>
                     <div class="character_description">
                         <p class="description">
-                            Xiao Yan é filho de Xiao Zhan (Yu Rong) e Gu Wenxin (Carman Lee) . A
-                            criança gênio da família Xiao. Ele avançou para o nível de mestre na luta Qi
-                            aos 11 anos de idade. No entanto, devido à morte de sua mãe, ele perdeu sua
-                            habilidade em 3 anos, então as pessoas começaram a considerá-lo um lixo. Ele
-                            então parte em uma jornada para se tornar mais forte entrando para a
-                            imponente Academia Jia Nan de Artes Marciais e Alquimia. Lá ele precisa
-                            vencer a si mesmo e seus mortais inimigos do Salão das Almas e Seita de
-                            Sangue para alcançar os níveis mais superiores de controle das Chamas de
-                            Poder e salvar o Continente de Qi do avanço das sombras.
+                            É o prodígio da família Xiao com incríveis habilidades mágicas. Após a morte de sua mãe e outras perdas, ele parte em uma jornada para se tornar mais forte entrando para a Academia Jia Nan de Artes Marciais e Alquimia.
                         </p>
                     </div>
                     <button class="character_button"></button>
