@@ -30,6 +30,10 @@ main {
     height: auto;
 }
 
+body {
+    user-select: none;
+}
+
 /* popups */
 .popup {
     width: 100%;
