@@ -156,3 +156,17 @@
 .carousel_button button:hover {
     cursor: pointer;
 }
+
+@media screen and (max-width: 540px) {
+    .carousel_items {
+        display: none;
+    }
+
+    #carousel {
+        height: 70vh;
+    }
+
+    .effect_carousel {
+        width: 130%;
+    }
+}

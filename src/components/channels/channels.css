@@ -186,3 +186,58 @@
 .avaliable_logos .logo .button:hover {
     filter: brightness(1.1);
 }
+
+@media screen and (max-width: 540px) {
+    #channels .channels_row {
+        width: 80%;
+        padding: 10% 0;
+    }
+
+    .channels_row .channels_title {
+        font-size: 28px;
+    }
+
+    .channels_area {
+        flex-direction: column;
+    }
+
+    .channel_container .logo_main {
+        width: 80%;
+    }
+
+    .channel_container .description {
+        line-height: 150%;
+    }
+
+    .channel_container .tv_logo_items .item {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .channel_container .tv_logo_items {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .channel_container .tv_logo_items .name_item {
+        line-height: 150%;
+    }
+
+    .avaliable_logos .logo {
+        width: 140px;
+    }
+
+    .avaliable_logos .logo img {
+        width: 70%;
+    }
+
+    .avaliable_logos .logo .site {
+        font-size: 12px;
+    }
+
+    .avaliable_logos .logo .button {
+        font-size: 16px;
+    }
+}

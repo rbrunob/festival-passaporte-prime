@@ -227,3 +227,33 @@
     width: 10px;
     transform: translate(-3px, 0px) rotate(135deg);
 }
+
+@media screen and (max-width: 540px) {
+    #sinopse .sinopse_row {
+        width: 80%;
+    }
+
+    .sinopse_content .sinopse_title {
+        font-size: 28px;
+    }
+
+    .sinopse_content .sinopse_description {
+        font-size: 16px;
+    }
+
+    .sinopse_row .function_sinopse .sinopse_line::after {
+        width: 100%;
+    }
+
+    .sinopse_row .sinopse_area.active {
+        height: 100%;
+    }
+
+    .cast .container_cast_title .cast_title {
+        font-size: 28px;
+    }
+
+    .cast .cast_items {
+        justify-content: flex-start;
+    }
+}

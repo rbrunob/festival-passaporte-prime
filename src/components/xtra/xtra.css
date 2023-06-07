@@ -136,3 +136,40 @@
 .xtra_carousel .xtra_items .xra_item.hidden {
     width: 0;
 }
+
+@media screen and (max-width: 540px) {
+    .xtra_row .xtra_title {
+        font-size: 28px;
+    }
+
+    #xtra .xtra_row {
+        padding: 10% 0;
+    }
+
+    .xtra_row .xtra_subtitle {
+        width: 80%;
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    #xtra {
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+
+    .xtra_carousel .xtra_items {
+        width: 100%;
+        height: 230px;
+        left: 0;
+    }
+
+    .xtra_carousel .xtra_items .xra_item {
+        left: -650px;
+        position: relative;
+        width: 75.5%;
+    }
+
+    .xtra_carousel .dots {
+        bottom: 0;
+    }
+}

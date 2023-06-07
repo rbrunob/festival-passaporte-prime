@@ -175,3 +175,27 @@
 .carousel .next {
     cursor: pointer;
 }
+
+@media screen and (max-width: 540px) {
+    #characters .characters_row {
+        width: 80%;
+    }
+
+    .characters_row .characters_title {
+        font-size: 28px;
+    }
+
+    .characters_row .characters_subtitle {
+        font-size: 16px;
+        line-height: 180%;
+    }
+
+    .character_item.active .character_name {
+        font-size: 28px;
+    }
+
+    .character_item .description {
+        font-size: 16px;
+        line-height: 120%;
+    }
+}

@@ -88,3 +88,9 @@ body {
     height: auto;
     border-radius: 20px;
 }
+
+@media screen and (max-width: 540px) {
+    .popup .popup_row {
+        width: 95%;
+    }
+}

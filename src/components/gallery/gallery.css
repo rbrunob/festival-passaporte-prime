@@ -68,3 +68,22 @@
     filter: brightness(1);
     cursor: pointer;
 }
+
+@media screen and (max-width: 540px) {
+    .gallery_row .gallery_title {
+        font-size: 28px;
+    }
+
+    .gallery_row .gallery_subtitle {
+        font-size: 16px;
+    }
+
+    #gallery .gallery_row {
+        width: 80%;
+        padding: 10% 0;
+    }
+
+    .gallery_area .gallery_items {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

@@ -230,3 +230,30 @@ header .header_row {
 .function_search.active .search_icon {
     background: #ffffff1c;
 }
+
+@media screen and (max-width: 540px) {
+    .header_functions .function_search {
+        display: none;
+    }
+
+    .header_logo {
+        left: -50px;
+    }
+
+    .header_logo img {
+        width: 80%;
+    }
+
+    .menu_items .items .item a {
+        font-size: 12px;
+    }
+
+    .menu_items .items .item {
+        border-bottom: 1px solid #CEA158;
+        padding: 16px 0;
+    }
+
+    .menu_items {
+        padding: 20px;
+    }
+}
