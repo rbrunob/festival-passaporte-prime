@@ -131,11 +131,13 @@ if (sinopse) {
         if (sinopseArea.classList.contains('active')) {
             sinopseArea.classList.remove('active');
             buttonSinopse.classList.remove('active');
+            buttonSinopse.setAttribute("title", "veja mais")
             location.href = '#sinopse'
 
         } else {
             sinopseArea.classList.add('active');
             buttonSinopse.classList.add('active');
+            buttonSinopse.setAttribute("title", "veja menos")
         }
     })
 }
@@ -194,6 +196,8 @@ if (xtraCarouselArea) {
     let currentTranslate = 0;
     let prevTranslate = 0;
     let currentIndex = 0;
+    let leftCount = 0;
+
 
     const handleHighlight = () => {
         xtraCarouselItems.forEach(item => {
@@ -260,7 +264,21 @@ if (xtraCarouselArea) {
                 }
             }, 10)
 
-            console.log('left')
+            let allDots = document.querySelectorAll('.dots .dot');
+            let widthDotsArea = dotsArea.offsetWidth - 10;
+
+            if (leftCount <= 0) {
+                leftCount = widthDotsArea
+                for (i = 0; i < allDots.length; i++) {
+                    allDots[i].style.left = `${-18}px`
+                    allDots[0].style.left = `${widthDotsArea}px`
+                }
+            } else {
+                allDots[0].style.left = `${leftCount -= 18}px`
+                allDots[allDots.length - 1].style.left = `${0}px`
+                allDots[currentIndex + 1].style.left = `${0}px`
+
+            }
 
         } else if (direction == 'right') {
             currentIndex++
@@ -286,19 +304,22 @@ if (xtraCarouselArea) {
                     }
                 }
             }, 300)
+            
+            let allDots = document.querySelectorAll('.dots .dot');
+            let widthDotsArea = dotsArea.offsetWidth - 10;
 
-            console.log('right')
+            if (leftCount >= widthDotsArea) {
+                leftCount = 0
+                for (i = 0; i < allDots.length - 1; i++) {
+                    allDots[i].style.left = `${0}px`
+                    allDots[allDots.length - 1].style.left = `${0}px`
+                }
+            } else {
+                allDots[0].style.left = `${leftCount += 18}px`
+                allDots[currentIndex].style.left = `${-18}px`
+            }
         }
 
-        let allDots = document.querySelectorAll('.dots .dot');
-
-        allDots.forEach((item, index) => {
-            if (index == currentIndex) {
-                item.classList.add('active');
-            } else {
-                item.classList.remove('active');
-            }
-        })
 
     }
 

@@ -21,7 +21,7 @@
                             Medusa é a rainha da Seita da Serpente . Ao salvar esta poderosa e cruel rainha, Xiao Yan se torna seu o grande protetor e da tribo do Povo da Serpente que o nomeiam seu grande Rei. Medusa é absorvida por Xiao Yan e se submete à ele.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button" title="saiba mais" aria-label="saiba mais"></button>
                 </div>
 
                 <div class="character_item">
@@ -34,7 +34,7 @@
                             É o Grande Ancião Mestre da Alquimia e Medicina, considerado um deus no cultivo da luta Qi. Vive no anel que Xiao Yan ganhou de sua mãe, que era também sua maior discípula. É alegre e brincalhão, mas quando necessário é muito severo.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button" title="saiba mais" aria-label="saiba mais"></button>
                 </div>
 
                 <div class="character_item">
@@ -47,7 +47,7 @@
                             É a herdeira do Clã Gu e a única possuidora do sangue Dou Di Perfeito no clã Gu nos últimos 1000 anos e também da força da Mãe Dragão. É a única que apoiou Xiao Yan quando ele estava fraco em suas habilidades.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button" title="saiba mais" aria-label="saiba mais"></button>
                 </div>
 
                 <div class="character_item">
@@ -60,7 +60,7 @@
                             É o prodígio da família Xiao com incríveis habilidades mágicas. Após a morte de sua mãe e outras perdas, ele parte em uma jornada para se tornar mais forte entrando para a Academia Jia Nan de Artes Marciais e Alquimia.
                         </p>
                     </div>
-                    <button class="character_button"></button>
+                    <button class="character_button" title="saiba mais" aria-label="saiba mais"></button>
                 </div>
             </div>
 

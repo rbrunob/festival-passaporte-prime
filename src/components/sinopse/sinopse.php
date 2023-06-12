@@ -82,7 +82,7 @@
         </div>
         <div class="function_sinopse">
             <div class="sinopse_line"></div>
-            <button class="sinopse_button"></button>
+            <button class="sinopse_button" title="veja mais" aria-label="veja mais"></button>
             <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/luz-sinopse-mais-glitter.webp" alt="" />
         </div>
     </div>

@@ -107,10 +107,23 @@
     height: 10px;
     border-radius: 50%;
     background-color: #ffffff61;
+    position: relative;
+    left: 0;
+    transition: all .3s;
 }
 
 .xtra_carousel .dots .dot.active {
     background-color: #fff;
+    left: 0px;
+}
+
+.xtra_carousel .dots .dot.prev {
+    background-color: #fff;
+    left: 18px;
+}
+
+.xtra_carousel .dots .dot.next {
+    left: -18px;
 }
 
 #xtra .xtra_row::before {

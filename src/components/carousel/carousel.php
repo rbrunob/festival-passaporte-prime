@@ -21,12 +21,12 @@
             <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/golden-glitter.webp" alt="" />
         </div>
         <div class="carousel_button">
-            <button>
-                teaser
+            <button aria-label="assista ao trailer" title="assista ao trailer">
+                teaser  
             </button>
         </div>
         <div class="light_effect">
-            <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/light-button.webp" alt="" />
+            <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/light-button.webp" alt="light effect" />
         </div>
     </div>
 </section>
