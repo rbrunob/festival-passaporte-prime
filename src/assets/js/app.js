@@ -190,7 +190,7 @@ const dotsArea = document.querySelector('.dots');
 const xtraCarouselArea = document.querySelector('.xtra_items');
 const xtraCarouselItems = document.querySelectorAll('.xra_item');
 if (xtraCarouselArea) {
-
+    // dafault variables
     let isDragging = false;
     let startPosition = 0;
     let currentTranslate = 0;
@@ -198,7 +198,7 @@ if (xtraCarouselArea) {
     let currentIndex = 0;
     let leftCount = 0;
 
-
+    // verify classes and update highlight class
     const handleHighlight = () => {
         xtraCarouselItems.forEach(item => {
             if (item.classList.contains('item-2')) {
@@ -211,6 +211,7 @@ if (xtraCarouselArea) {
 
     handleHighlight();
 
+    // create dots and add active to the first dot
     const createDots = () => {
         for (i = 0; i < xtraCarouselItems.length; i++) {
             const dot = document.createElement('span');
@@ -226,11 +227,15 @@ if (xtraCarouselArea) {
 
     createDots();
 
+    // move carousel based on the direction it receives (left, right)
     function handleCarousel(direction) {
         let areaItems = document.querySelector(".xtra_items");
         let allItems = areaItems.querySelectorAll('.xra_item');
+
+        // aux variable
         let itemChange;
 
+        // remove highlight class from all items
         for (i = 0; i < allItems.length; i++) {
             if (allItems[i].classList.contains('highlight')) {
                 allItems[i].classList.remove('highlight');
@@ -244,40 +249,70 @@ if (xtraCarouselArea) {
                 currentIndex = allItems.length - 1
             }
 
+            // stores the last item
             itemChange = allItems[allItems.length - 1];
+
+            // remove the last item
             allItems[allItems.length - 1].remove();
+
+            // insert last item after begin area items div
             areaItems.insertAdjacentElement("afterbegin", itemChange);
+
+            // get all item again to update new items postions
             allItems = areaItems.querySelectorAll('.xra_item');
+
+            // animation classes
             allItems[0].classList.add('hidden');
             allItems[5].classList.add('hidden');
             setTimeout(function () {
                 allItems[5].classList.remove('hidden');
             }, 400)
 
+            // get all item again to update new items postions
             allItems = areaItems.querySelectorAll('.xra_item');
+
             setTimeout(function () {
+
+                // add highligh class ever to the sencond item
                 allItems[2].classList.add('highlight');
+
+                // handle hidden classes from all items
                 for (i = 0; i < allItems.length; i++) {
                     if (allItems[0].classList.contains('hidden')) {
                         allItems[0].classList.remove('hidden');
                     }
                 }
+
             }, 10)
 
+            // get all dots
             let allDots = document.querySelectorAll('.dots .dot');
+
+            // get width dots area
             let widthDotsArea = dotsArea.offsetWidth - 10;
 
+            // verify position
             if (leftCount <= 0) {
+                // set leftCount as width area
                 leftCount = widthDotsArea
+
                 for (i = 0; i < allDots.length; i++) {
+                    // add -18px for all dots
                     allDots[i].style.left = `${-18}px`
+
+                    // append the first item to the end of the dots area
                     allDots[0].style.left = `${widthDotsArea}px`
                 }
-            } else {
-                allDots[0].style.left = `${leftCount -= 18}px`
-                allDots[allDots.length - 1].style.left = `${0}px`
-                allDots[currentIndex + 1].style.left = `${0}px`
 
+            } else {
+                // decrement -18px to the first item
+                allDots[0].style.left = `${leftCount -= 18}px`
+
+                // set as zero the last item postion
+                allDots[allDots.length - 1].style.left = `${0}px`
+
+                // set as zero left style
+                allDots[currentIndex + 1].style.left = `${0}px`
             }
 
         } else if (direction == 'right') {
@@ -287,16 +322,29 @@ if (xtraCarouselArea) {
                 currentIndex = 0;
             }
 
+            // get all item again to update new items postions
             allItems = areaItems.querySelectorAll('.xra_item');
+
+            // stores the first item
             itemChange = allItems[0];
+
+            // handle hidden class to the first item
             allItems[0].classList.add('hidden')
             setTimeout(function () {
+                // remove first item
                 allItems[0].remove();
+
+                // insert first item before end area items
                 areaItems.insertAdjacentElement("beforeend", itemChange);
             }, 300)
 
+            // get all item again to update new items postions
             allItems = areaItems.querySelectorAll('.xra_item');
+
+            // add highligh class ever to the sencond item
             allItems[3].classList.add('highlight');
+
+            // remove highlight class from all items
             setTimeout(function () {
                 for (i = 0; i < allItems.length; i++) {
                     if (allItems[i].classList.contains('hidden')) {
@@ -304,18 +352,28 @@ if (xtraCarouselArea) {
                     }
                 }
             }, 300)
-            
+
             let allDots = document.querySelectorAll('.dots .dot');
+
+            // get width dots area
             let widthDotsArea = dotsArea.offsetWidth - 10;
 
+            // verify position
             if (leftCount >= widthDotsArea) {
+                // set leftCount as 0
                 leftCount = 0
+
                 for (i = 0; i < allDots.length - 1; i++) {
+                    // set all left style items to zero
                     allDots[i].style.left = `${0}px`
+
+                    // set last item left style to zero
                     allDots[allDots.length - 1].style.left = `${0}px`
                 }
             } else {
+                // increment 18px to the first item
                 allDots[0].style.left = `${leftCount += 18}px`
+                // set -18px left style
                 allDots[currentIndex].style.left = `${-18}px`
             }
         }
@@ -370,6 +428,7 @@ galleryItems.forEach(item => {
 
         const src = item.children[0].src;
 
+        // html structure
         popup.innerHTML = `
         <div class='close'></div>
         <div class="popup_row">
@@ -379,15 +438,13 @@ galleryItems.forEach(item => {
         </div>
         `;
 
+        // close actions
         const handleClose = () => {
             popup.style.visibility = 'hidden'
             popup.style.opacity = '0'
         }
 
         document.querySelector('.close').addEventListener('click', handleClose);
-
-
-
     })
 })
 
@@ -398,20 +455,23 @@ if (teaserButton) {
         popup.style.visibility = 'visible';
         popup.style.opacity = '1';
 
+        // set url content
         const src = "https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/teaser-passaporte-prime.mp4"
 
+        // html structure
         popup.innerHTML = `
-    <div class='close'></div>
-    <div class="popup_row">
-        <div class="popup_content">
-            <video src=${src} preload controls></video>
+        <div class='close'></div>
+        <div class="popup_row">
+            <div class="popup_content">
+                <video src=${src} preload controls></video>
+            </div>
         </div>
-    </div>
-    `;
+        `;
 
         document.querySelector('.close').addEventListener('click', handleClose);
     })
 
+    // append pop up section in the body html
     body.appendChild(popup);
 
     const handleClose = () => {
@@ -428,12 +488,14 @@ if (fullItemsCarouselArea) {
     const fullItemsCarouselItems = document.querySelectorAll('.full-item-items .item');
     const areaDots = document.querySelector('.dots-full-item');
 
+    // default variables
     let isDragging = false;
     let startPosition = 0;
     let currentTranslate = 0;
     let prevTranslate = 0;
     let currentIndex = 0;
 
+    // create dots based in the carousel items length
     const createDots = () => {
         for (i = 0; i < fullItemsCarouselItems.length; i++) {
             const dot = document.createElement('span');
@@ -449,6 +511,7 @@ if (fullItemsCarouselArea) {
 
     createDots();
 
+    // move carousel based on the direction it receives (left, right)
     function handleCarousel(direction) {
         if (direction == 'left') {
             currentIndex++
@@ -464,6 +527,7 @@ if (fullItemsCarouselArea) {
 
         let allDots = document.querySelectorAll('.dots-full-item .dot');
 
+        // update dot active
         allDots.forEach((item, index) => {
             if (index == currentIndex) {
                 item.classList.add('active');
@@ -520,34 +584,42 @@ if (fullItemsCarouselArea) {
 const highlights = document.getElementById('highlights');
 
 if (highlights) {
+    // default variable
     let index = 0
 
     const prev = document.querySelector(".carousel_actions_highlights .prev_h")
     const next = document.querySelector(".carousel_actions_highlights .next_h")
 
     next.addEventListener("click", () => {
+        // increment 
         index++
 
+        // verify position 
         if (index > 2) {
             index = 0
         }
 
+        // call function
         handleCarousel(index)
     })
 
     prev.addEventListener("click", () => {
+        // decrement 
         index--
 
+        // verify position 
         if (index < 0) {
             index = 2
         }
 
+        // call function
         handleCarousel(index)
     })
 
 
     const items = document.querySelectorAll(".items_highlights .item");
 
+    // set carousel position 
     function handleCarousel(index) {
         for (i = 0; i < items.length; i++) {
             switch (index) {
@@ -651,6 +723,7 @@ if (carouselFullWidth) {
         })
     })
 
+    // update active dots
     dotsFullWidth.forEach((item, index) => {
         if (index == currentIndex) {
             item.classList.add('active');
