@@ -463,7 +463,7 @@ if (teaserButton) {
         <div class='close'></div>
         <div class="popup_row">
             <div class="popup_content">
-                <video src=${src} preload controls></video>
+                <iframe width="100%" height="550" src="https://www.youtube.com/embed/O9pJCgB1HUY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
             </div>
         </div>
         `;

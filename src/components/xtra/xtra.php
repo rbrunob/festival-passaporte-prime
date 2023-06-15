@@ -7,25 +7,34 @@
         <div class="xtra_carousel">
             <div class="xtra_items">
                 <div class="xra_item item-0">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_0.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/LNcetWdiMPo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-1">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_1.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/JQ7ZX44Uanc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-2">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_2.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/UXTdGCl28ZU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-3">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_3.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/EzNSjNvwREE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-4">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_4.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/cowf2ha2vY8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-5">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_5.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/NVbr-HmnCtA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-6">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_6.webp" alt="extra image carousel" />
+                    <iframe src="https://www.youtube.com/embed/hXYPati28Fw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="xra_item item-7">
+                    <iframe src="https://www.youtube.com/embed/6-7ZIvxFNvM" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="xra_item item-8">
+                    <iframe src="https://www.youtube.com/embed/yFG1Oq8gUKs" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="xra_item item-9">
+                    <iframe src="https://www.youtube.com/embed/IXCmfJxTPn8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
             </div>
 

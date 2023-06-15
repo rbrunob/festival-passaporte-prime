@@ -66,11 +66,12 @@
     justify-content: center;
     width: 18.5%;
     margin: 0 12px 0;
-    filter: brightness(0.7);
+    filter: brightness(0.5);
     scroll-snap-align: center;
     pointer-events: none;
     flex-shrink: 0;
     transition: all .3s;
+    height: 200px;
     user-select: none;
 }
 
@@ -80,14 +81,15 @@
     margin: 0 30px 0;
 }
 
-.xtra_carousel .xtra_items .xra_item.highlight img {
+.xtra_carousel .xtra_items .xra_item.highlight iframe {
     border-radius: 20px;
 }
 
-.xtra_carousel .xtra_items .xra_item img {
+.xtra_carousel .xtra_items .xra_item iframe {
     border-radius: 20px;
     filter: drop-shadow(2px 4px 6px black);
     width: 100%;
+    height: 200px;
 }
 
 .xtra_carousel .dots {

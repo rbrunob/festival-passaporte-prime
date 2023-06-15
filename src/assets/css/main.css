@@ -83,9 +83,9 @@ body {
     border-radius: 20px;
 }
 
-.popup .popup_row .popup_content video {
+.popup .popup_row .popup_content iframe {
     width: 100%;
-    height: auto;
+    height: 550px;
     border-radius: 20px;
 }
 
