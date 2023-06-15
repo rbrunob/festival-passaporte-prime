@@ -263,7 +263,6 @@ if (xtraCarouselArea) {
 
             // animation classes
             allItems[0].classList.add('hidden');
-            allItems[5].classList.add('hidden');
             setTimeout(function () {
                 allItems[5].classList.remove('hidden');
             }, 400)
