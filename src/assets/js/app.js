@@ -410,6 +410,12 @@ if (xtraCarouselArea) {
     xtraCarouselArea.addEventListener('mouseleave', () => {
         isDragging = false;
     });
+
+    const prevXtra = document.querySelector('.xtra_carousel .prev')
+    const nextXtra = document.querySelector('.xtra_carousel .next')
+
+    prevXtra.addEventListener('click', () => handleCarousel('right'))
+    nextXtra.addEventListener('click', () => handleCarousel('left'))
 }
 // xtra carousel
 

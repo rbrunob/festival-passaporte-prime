@@ -21,6 +21,15 @@
     gap: 30px;
 }
 
+#cmg .cmg_row .partners{
+    width: 100%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
 #cmg .cmg_row img {
     width: 176px;
     height: auto;

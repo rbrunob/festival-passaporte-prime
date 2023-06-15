@@ -44,6 +44,7 @@
     gap: 10px;
     flex-direction: column;
     width: 100%;
+    position: relative;
 }
 
 .xtra_carousel .xtra_items {
@@ -78,6 +79,7 @@
 .xtra_carousel .xtra_items .xra_item.highlight {
     filter: brightness(1);
     transform: scale(1.15);
+    pointer-events: auto;
     margin: 0 30px 0;
 }
 
@@ -150,6 +152,20 @@
 
 .xtra_carousel .xtra_items .xra_item.hidden {
     width: 0;
+}
+
+#xtra .xtra_carousel .prev {
+    z-index: 4;
+    cursor: pointer;
+    position: absolute;
+    left: 70px;
+}
+
+#xtra .xtra_carousel .next {
+    z-index: 4;
+    cursor: pointer;
+    position: absolute;
+    right: 70px;
 }
 
 @media screen and (max-width: 540px) {

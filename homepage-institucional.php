@@ -19,7 +19,9 @@
         <? include("./src/components/carousel-fullitem/full-item.php") ?>
         <? include("./src/components/about/about.php") ?>
         <? include("./src/components/group/group.php") ?>
-        <? include("./src/components/highlights/highlights.php") ?>
+        <?
+        // include("./src/components/highlights/highlights.php") 
+        ?>
         <? include("./src/components/blog/blog.php") ?>
         <? include("./src/components/channels/channels.php") ?>
         <? include("./src/components/cmg/cmg.php") ?>

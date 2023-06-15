@@ -6,6 +6,7 @@
     height: 100vh;
     width: 100%;
     display: flex;
+    min-height: 950px;
     align-items: flex-end;
     justify-content: center;
     transition: all .5s;
@@ -157,13 +158,33 @@
     cursor: pointer;
 }
 
-@media screen and (max-width: 540px) {
+@media screen and (max-width: 1700px) {
+    #carousel {
+        background-size: contain;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    #carousel {
+        min-height: 850px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    #carousel {
+        min-height: 1000px;
+        background-size: cover;
+    }
+}
+
+@media screen and (max-width: 780px) {
     .carousel_items {
         display: none;
     }
 
     #carousel {
         height: 70vh;
+        min-height: auto;
     }
 
     .effect_carousel {

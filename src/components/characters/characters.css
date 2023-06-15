@@ -170,10 +170,12 @@
 
 .carousel .prev {
     cursor: pointer;
+    display: none;
 }
 
 .carousel .next {
     cursor: pointer;
+    display: none;
 }
 
 @media screen and (max-width: 540px) {
@@ -197,5 +199,13 @@
     .character_item .description {
         font-size: 16px;
         line-height: 120%;
+    }
+
+    .carousel .prev {
+        cursor: pointer;
+    }
+
+    .carousel .next {
+        cursor: pointer;
     }
 }
