@@ -16,11 +16,11 @@
     <? include("./src/components/header/header.php") ?>
 
     <main>
-        <? include("./src/components/carousel-fullitem/full-item.php") ?>
-        <? include("./src/components/about/about.php") ?>
+        <? include("./src/components/carousel-fullitem/full-item-acervo.php") ?>
+        <? include("./src/components/about/about-acervo.php") ?>
         <? include("./src/components/acervo/acervo.php") ?>
         <? include("./src/components/channels/channels.php") ?>
-        <? include("./src/components/cmg/cmg.php") ?>
+        <? include("./src/components/cmg/cmg-acervo.php") ?>
     </main>
 
     <? include("./src/components/footer/footer.php") ?>

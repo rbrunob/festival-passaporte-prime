@@ -24,7 +24,7 @@
 .about_row .image_about img {
     margin: 0 auto;
     height: auto;
-    width: 100%;
+    width: auto;
 }
 
 .about_row .about_content {
