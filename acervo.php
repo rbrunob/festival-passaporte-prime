@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="./src/assets/css/main.css" />
     <link rel="stylesheet" href="./src/assets/css/pages/homepage-institucional.css" />
 
-    <title>Festival Passaporte Prime</title>
+    <title>Acervo Passaporte Prime</title>
 </head>
 
 <body>
@@ -18,11 +18,7 @@
     <main>
         <? include("./src/components/carousel-fullitem/full-item.php") ?>
         <? include("./src/components/about/about.php") ?>
-        <? include("./src/components/group/group.php") ?>
-        <?
-        // include("./src/components/highlights/highlights.php") 
-        ?>
-        <? include("./src/components/blog/blog.php") ?>
+        <? include("./src/components/acervo/acervo.php") ?>
         <? include("./src/components/channels/channels.php") ?>
         <? include("./src/components/cmg/cmg.php") ?>
     </main>

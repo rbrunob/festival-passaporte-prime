@@ -739,3 +739,66 @@ if (carouselFullWidth) {
     })
 
 }
+
+// acervo effects
+
+// open/close cards
+const buttonAcervoOpen = document.querySelectorAll('.button_open_description');
+const buttonAcervoClose = document.querySelectorAll('.button_back');
+const buttonAcervoMore = document.querySelectorAll('.button_more');
+const moreContentsAcervo = document.querySelector('.button_more_acervo');
+
+buttonAcervoOpen.forEach(button => {
+    button.addEventListener('click', () => {
+        button.parentElement.classList.add('active');
+
+        buttonAcervoClose.forEach(button => {
+            button.classList.add('active');
+        })
+
+    });
+});
+
+buttonAcervoClose.forEach(button => {
+
+    button.addEventListener('click', () => {
+        button.parentElement.parentElement.classList.remove('active');
+    });
+
+    button.addEventListener('mouseover', (e) => {
+        const effect = button.parentElement.querySelector('.effect');
+
+        effect.style.left = '0px';
+
+        e.currentTarget.classList.add('active');
+
+        buttonAcervoMore.forEach(button => {
+            button.classList.remove('active');
+        })
+    })
+});
+
+buttonAcervoMore.forEach(button => {
+
+    button.addEventListener('mouseover', (e) => {
+        const effect = button.parentElement.querySelector('.effect');
+
+        effect.style.left = '68px';
+
+        e.currentTarget.classList.add('active');
+
+        buttonAcervoClose.forEach(button => {
+            button.classList.remove('active');
+        })
+    })
+})
+
+const acervoArea = document.querySelector('.acervo_area');
+const areaMore = document.querySelector('.area_more');
+
+moreContentsAcervo.addEventListener('click', (e) => {
+    acervoArea.style.height = 'auto'
+    areaMore.style.height = '0px'
+})
+
+

@@ -1,10 +1,10 @@
 @import url("../../../components/carousel-fullitem/full-item.css");
 @import url("../../../components/about/about.css");
 @import url("../../../components/group/group.css");
-@import url("../../../components/highlights/highlights.css");
 @import url("../../../components/blog/blog.css");
 @import url("../../../components/channels/channels.css");
 @import url("../../../components/cmg/cmg.css");
+@import url("../../../components/acervo/acervo.css");
 
 body {
     background-color: #fff;
