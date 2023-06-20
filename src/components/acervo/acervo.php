@@ -166,6 +166,199 @@
                     <div class="effect"></div>
                 </div>
             </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+            <div class="acervo_item">
+                <div class="item_image">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-carousel-highlight-01.webp" alt="imagem do programa" />
+                </div>
+                <div class="item_description">
+                    <p class="description">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem culpa eligendi.
+                    </p>
+                </div>
+                <button class="button_open_description">Saiba Mais</button>
+                <div class="item_button">
+                    <button class="button_back">Voltar</button>
+                    <button class="button_more">Mais</button>
+                    <div class="effect"></div>
+                </div>
+            </div>
+
         </div>
 
         <div class="area_more">

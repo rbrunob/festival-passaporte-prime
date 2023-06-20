@@ -22,19 +22,19 @@
             <nav class="menu_items">
                 <ul class="items">
                     <li class="item">
-                        <a href="index.php" aria-label="Home">Home</a>
+                        <a href="luta-ceu-afora.php" aria-label="Home">Home</a>
                     </li>
                     <li class="item">
-                        <a href="homepage-institucional.php" aria-label="Sobre o Passaporte Prime">Sobre o Passaporte Prime</a>
+                        <a href="index.php" aria-label="Sobre o Passaporte Prime">Sobre o Passaporte Prime</a>
                     </li>
                     <li class="item">
-                        <a href="index.php" aria-label="Mostra de Filmes do Japão">Mostra de Filmes do Japão</a>
+                        <a href="mostra-filmes.php" aria-label="Mostra de Filmes do Japão">Mostra de Filmes do Japão</a>
                     </li>
                     <li class="item">
                         <a href="https://triboseimperios.com.br/" target="_blank" aria-label="Tribos e Impérios">Tribos e Impérios</a>
                     </li>
                     <li class="item">
-                        <a href="contato.php" aria-label="Fale Conosco">Fale Conosco</a>
+                        <a href="acervo.php" aria-label="Acervo">Acervo</a>
                     </li>
                 </ul>
             </nav>

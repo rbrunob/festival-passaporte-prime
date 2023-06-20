@@ -783,7 +783,7 @@ buttonAcervoMore.forEach(button => {
     button.addEventListener('mouseover', (e) => {
         const effect = button.parentElement.querySelector('.effect');
 
-        effect.style.left = '68px';
+        effect.style.left = '60px';
 
         e.currentTarget.classList.add('active');
 
@@ -795,10 +795,31 @@ buttonAcervoMore.forEach(button => {
 
 const acervoArea = document.querySelector('.acervo_area');
 const areaMore = document.querySelector('.area_more');
+const acervoItem = document.querySelectorAll('.acervo_item');
+const buttonAcervo = document.querySelector('.button_more_acervo');
 
-moreContentsAcervo.addEventListener('click', (e) => {
-    acervoArea.style.height = 'auto'
-    areaMore.style.height = '0px'
-})
+count = 0
+sum = 0
+gap = 40
+
+while (count < acervoItem.length) {
+    sum = sum + gap + acervoItem[count].clientHeight
+    count = count + 4
+}
+
+moreContentsAcervo.addEventListener('click', () => {
+
+    let currentHeight = acervoArea.clientHeight;
+
+    areaMore.classList.toggle('active')
+    buttonAcervo.classList.toggle('active')
+
+    acervoArea.style.height = `${sum}px`
+
+    if (currentHeight >= sum) {
+        acervoArea.style.height = `${1090}px`
+    }
+
+});
 
 
