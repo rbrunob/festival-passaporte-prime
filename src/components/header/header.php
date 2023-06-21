@@ -28,7 +28,7 @@
                         <a href="index.php" aria-label="Sobre o Passaporte Prime">Sobre o Passaporte Prime</a>
                     </li>
                     <li class="item">
-                        <a href="mostra-filmes.php" aria-label="Mostra de Filmes do Japão">Mostra de Filmes do Japão</a>
+                        <a href="mostra-de-filmes.php" aria-label="Mostra de Filmes do Japão">Mostra de Filmes do Japão</a>
                     </li>
                     <li class="item">
                         <a href="https://triboseimperios.com.br/" target="_blank" aria-label="Tribos e Impérios">Tribos e Impérios</a>

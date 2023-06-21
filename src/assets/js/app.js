@@ -516,6 +516,21 @@ if (fullItemsCarouselArea) {
 
     createDots();
 
+    // animate name content banners
+    const showBannerEffect = () => {
+        fullItemsCarouselItems.forEach((item, index) => {
+            if (index == currentIndex) {
+                item.classList.add('active')
+            } else {
+                item.classList.remove('active')
+            }
+        })
+    }
+
+    showBannerEffect()
+
+
+
     // move carousel based on the direction it receives (left, right)
     function handleCarousel(direction) {
         if (direction == 'left') {
@@ -540,6 +555,9 @@ if (fullItemsCarouselArea) {
                 item.classList.remove('active');
             }
         })
+
+        // execute animate function
+        showBannerEffect()
     }
 
     let quantity = 1;
@@ -584,67 +602,6 @@ if (fullItemsCarouselArea) {
     fullItemsCarouselAreaItems.addEventListener('mouseleave', () => {
         isDragging = false;
     });
-}
-
-const highlights = document.getElementById('highlights');
-
-if (highlights) {
-    // default variable
-    let index = 0
-
-    const prev = document.querySelector(".carousel_actions_highlights .prev_h")
-    const next = document.querySelector(".carousel_actions_highlights .next_h")
-
-    next.addEventListener("click", () => {
-        // increment 
-        index++
-
-        // verify position 
-        if (index > 2) {
-            index = 0
-        }
-
-        // call function
-        handleCarousel(index)
-    })
-
-    prev.addEventListener("click", () => {
-        // decrement 
-        index--
-
-        // verify position 
-        if (index < 0) {
-            index = 2
-        }
-
-        // call function
-        handleCarousel(index)
-    })
-
-
-    const items = document.querySelectorAll(".items_highlights .item");
-
-    // set carousel position 
-    function handleCarousel(index) {
-        for (i = 0; i < items.length; i++) {
-            switch (index) {
-                case 0:
-                    items[0].classList.replace(`item-${i}`, "item-0");
-                    items[1].classList.replace(`item-${i}`, "item-1");
-                    items[2].classList.replace(`item-${i}`, "item-2");
-                    break;
-                case 1:
-                    items[0].classList.replace(`item-${i}`, "item-2");
-                    items[1].classList.replace(`item-${i}`, "item-0");
-                    items[2].classList.replace(`item-${i}`, "item-1");
-                    break;
-                case 2:
-                    items[0].classList.replace(`item-${i}`, "item-1");
-                    items[1].classList.replace(`item-${i}`, "item-2");
-                    items[2].classList.replace(`item-${i}`, "item-0");
-            }
-        }
-    }
 }
 
 const blog = document.querySelector("#blog");
@@ -798,9 +755,9 @@ const areaMore = document.querySelector('.area_more');
 const acervoItem = document.querySelectorAll('.acervo_item');
 const buttonAcervo = document.querySelector('.button_more_acervo');
 
-count = 0
-sum = 0
-gap = 40
+let count = 0
+let sum = 0
+let gap = 40
 
 while (count < acervoItem.length) {
     sum = sum + gap + acervoItem[count].clientHeight
@@ -814,10 +771,11 @@ moreContentsAcervo.addEventListener('click', () => {
     areaMore.classList.toggle('active')
     buttonAcervo.classList.toggle('active')
 
-    acervoArea.style.height = `${sum}px`
+    acervoArea.style.height = `${sum + 200}px`
 
     if (currentHeight >= sum) {
         acervoArea.style.height = `${1090}px`
+        location.href = '#acervo'
     }
 
 });
