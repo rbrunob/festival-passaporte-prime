@@ -1,6 +1,6 @@
 <section id="description">
     <div class="description_row">
-        <h1 class="description_title">O Cinema Japones...</h1>
+        <h1 class="description_title">O Cinema Japonês...</h1>
         <p class="description_descrp">
             ...é uma das produções mais destacadas no mundo com grandes nomes clássicos da cinematografia mundial com Akira Kurosawa( OSCAR honorário em 1990 ), Yasujiro Ozu, Shohei Imamura , Hayao Miyazak. O cinema do Japão já concorreu 16 vezes na categoria Filme Estrangeiro.
             Nos últimos anos, a produção de cinema e televisão tem ido muito além dos Animes, já famosos no Brasil.

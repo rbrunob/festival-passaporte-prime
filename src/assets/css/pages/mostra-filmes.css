@@ -1,5 +1,6 @@
 @import url("../../../components/about-custom/about-custom.css");
 @import url("../../../components/carousel-fullwidth/fullwidth.css");
+@import url("../../../components/description/description.css");
 
 .acervo_area .acervo_item {
     height: 500px;
@@ -41,4 +42,46 @@
 
 .acervo_area .acervo_item.active .item_button {
     bottom: 40px;
+}
+
+.fullwidth_row .carousel_fullwidth .item {
+    border-top: 4px solid #bc8a3a;
+}
+
+.fullwidth_row .carousel_fullwidth .item::before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 800px;
+    background-image: linear-gradient(0deg, #E9E9E9, transparent);
+}
+
+.fullwidth_row .dotsfull {
+    bottom: 15%;
+    gap: 20px;
+}
+
+.fullwidth_row .dotsfull .dotfull {
+    width: 15px;
+    height: 15px;
+}
+
+.fullwidth_row .carousel_fullwidth .item .title_movie {
+    position: absolute;
+    left: 10%;
+    font-size: 76px;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    align-items: flex-start;
+    font-weight: 700;
+    justify-content: center;
+    bottom: 40%;
+}
+
+.fullwidth_row .carousel_fullwidth .item .title_movie span {
+    font-size: 96px;
+    color: #00144E;
+    font-weight: 900;
 }
