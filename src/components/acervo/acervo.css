@@ -29,7 +29,7 @@
     font-size: 18px;
     line-height: 170%;
     color: #676767;
-    text-align: start;
+    text-align: center;
     width: 80%;
     margin: 0 auto;
 }
@@ -289,7 +289,7 @@
 
 .acervo_area .acervo_item.active {
     height: 500px;
-    top: -60px;
+    top: -40px;
 }
 
 .acervo_area .acervo_item.active .item_image img {
