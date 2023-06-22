@@ -4,11 +4,10 @@
             <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/ampulheta.webp" alt="ampulheta" />
         </div>
         <div class="about_content">
-            <h1 class="about_title">Festival Passaporte Prime</h1>
+            <h1 class="about_title">Sobre o Festival Passaporte Prime</h1>
             <p class="about_description">
-                A Box Brazil iniciou suas atividades no mercado brasileiro em 2011, tendo em mente um objetivo pioneiro: criar um espaço para conteúdo brasileiro na TV por assinatura. Em 10 anos, o Grupo Box Brasil consolidou seu espaço como emissora de TV por assinatura e o maior grupo independente do Brasil.
-                O Box Brazil Media Group inova mais uma vez ao firmar novas parcerias internacionais trazendo produções inéditas e de alta qualidade para o Brasil.
-                Em 2021 a faixa especial FESTIVAL PASSAPORTE PRIME foi criada no canal PRIME BOX e na plataforma BBPLAY para trazer ao público brasileiro séries, filmes e documentários como parte de um projeto de pontes culturais através do audiovisual.
+                Em 2021, o Prime Box Brazil estreou na sua programação linear e também na plataforma de streaming Box Brazil Play a faixa Festival Passaporte Prime na qual passou a abrigar conteúdos internacionais de países como China e Japão.
+                Com o objetivo de ser uma janela para conhecer novas cinematografias e novas culturas, o Festival Passaporte Prime exibe longas-metragens e séries documentais e ficcionais dos mais diversos gêneros – comédia, drama, fantasia, ficção científica, terror, etc.
             </p>
         </div>
     </div>

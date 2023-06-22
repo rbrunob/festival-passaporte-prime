@@ -2,7 +2,7 @@
     <div class="row">
         <h1 class="title">Acervo de sucessos</h1>
         <p class="description">
-            Lorem ipsum dolor sit amet consectetur. Eget faucibus amet eget ut. Et non montes euismod imperdiet vitae justo. Gravida consectetur quis tortor ac a facilisi praesent vestibulum elementum. Pellentesque adipiscing cursus metus nulla proin. Amet.
+            Conheça os conteúdos já exibidos no Festival Passaporte abaixo:
         </p>
 
         <div class="acervo_area">

@@ -85,3 +85,8 @@
     color: #00144E;
     font-weight: 900;
 }
+
+#acervo .row .description {
+    width: 100%;
+    margin: 0 0 40px;
+}
