@@ -56,7 +56,7 @@
     transition: all .3s ease-in-out;
     border-radius: 26px;
     position: absolute;
-    width: 150px;
+    width: 160px;
     height: 265px;
     cursor: pointer;
     filter: brightness(.5);

@@ -10,9 +10,6 @@
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_0.webp" alt="image gallery" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_1.webp" alt="image gallery" />
-                </div>
-                <div class="gallery_item">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_2.webp" alt="image gallery" />
                 </div>
                 <div class="gallery_item">
@@ -53,6 +50,9 @@
                 </div>
                 <div class="gallery_item">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_15.webp" alt="image gallery" />
+                </div>
+                <div class="gallery_item">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_16.webp" alt="image gallery" />
                 </div>
             </div>
         </div>
