@@ -20,7 +20,7 @@
         <? include("./src/components/carousel-fullitem/full-item-mostra.php") ?>
         <? include("./src/components/about-custom/about-custom.php") ?>
         <? include("./src/components/acervo/acervo-mostra.php") ?>
-        <? include("./src/components/carousel-fullwidth/fullwidth.php") ?>
+        <? include("./src/components/carousel-fullwidth/fullwidth-mostra.php") ?>
         <? include("./src/components/description/description.php") ?>
         <? include("./src/components/channels/channels.php") ?>
         <? include("./src/components/cmg/cmg-mostra.php") ?>

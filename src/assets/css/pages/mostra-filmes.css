@@ -1,0 +1,44 @@
+@import url("../../../components/about-custom/about-custom.css");
+@import url("../../../components/carousel-fullwidth/fullwidth.css");
+
+.acervo_area .acervo_item {
+    height: 500px;
+    top: 0;
+}
+
+.acervo_area .acervo_item.active {
+    top: 0;
+}
+
+.acervo_area .acervo_item .item_image {
+    width: 100%;
+    height: 90%;
+    top: 0;
+}
+
+.acervo_area .acervo_item.active .item_image {
+    width: 110px;
+    height: 110px;
+    border-radius: 50%;
+    top: 0;
+}
+
+.acervo_area .acervo_item .item_image img {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    border-radius: 12px;
+}
+
+.acervo_area {
+    height: auto;
+}
+
+.acervo_area .acervo_item .item_description {
+    top: 50px;
+    position: absolute;
+}
+
+.acervo_area .acervo_item.active .item_button {
+    bottom: 40px;
+}

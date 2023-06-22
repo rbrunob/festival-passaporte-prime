@@ -1,14 +1,14 @@
 <section id="acervo">
     <div class="row">
-        <h1 class="title">Acervo de sucessos</h1>
+        <h1 class="title">Confira os 8 títulos disponíveis</h1>
         <p class="description">
-            Lorem ipsum dolor sit amet consectetur. Eget faucibus amet eget ut. Et non montes euismod imperdiet vitae justo. Gravida consectetur quis tortor ac a facilisi praesent vestibulum elementum. Pellentesque adipiscing cursus metus nulla proin. Amet.
+            O Festival Passaporte Prime traz em março a Mostra de Filmes do Japão, uma parceria JETRO São Paulo – JAPAN EXTERNAL TRADE ORGANIZATION e Box Brazil Media Group. A seleção conta com oito filmes e apresenta um panorama da aclamada produção japonesa.
         </p>
 
         <div class="acervo_area">
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/evolucao-nosso-amor-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-01.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -26,7 +26,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/acima-e-fora-da-pobreza-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-02.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -44,7 +44,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/alem-montanha-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-03.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -62,7 +62,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/as-criancas-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-04.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -80,7 +80,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/antilopes-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-05.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -98,7 +98,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bela-juventude-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-06.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -116,7 +116,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/duas-ko-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-07.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
@@ -132,7 +132,7 @@
             </div>
             <div class="acervo_item">
                 <div class="item_image">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/filme-verao-acervos-sucesso.webp" loading="lazy" alt="imagem do programa" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image-acervo-highlight-08.webp" loading="lazy" alt="imagem do programa" />
                 </div>
                 <div class="item_description">
                     <p class="description">
