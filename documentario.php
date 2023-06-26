@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./src/assets/css/main.css" />
     <link rel="stylesheet" href="./src/assets/css/pages/homepage.css" />
+    <link rel="stylesheet" href="./src/assets/css/pages/documentario.css" />
 
     <link rel="preload" href="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-passaporte-prime-01.webp" as="image/webp" />
     <link rel="preload" href="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-passaporte-prime-02.webp" as="image/webp" />
