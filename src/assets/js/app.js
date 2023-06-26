@@ -424,6 +424,14 @@ const body = document.querySelector('body');
 const popup = document.createElement('div');
 popup.classList.add('popup')
 
+// append pop up section in the body html
+body.appendChild(popup);
+
+const handleClose = () => {
+    popup.style.visibility = 'hidden'
+    popup.style.opacity = '0'
+}
+
 const galleryItems = document.querySelectorAll('.gallery_item');
 
 galleryItems.forEach(item => {
@@ -475,15 +483,6 @@ if (teaserButton) {
 
         document.querySelector('.close').addEventListener('click', handleClose);
     })
-
-    // append pop up section in the body html
-    body.appendChild(popup);
-
-    const handleClose = () => {
-        popup.style.visibility = 'hidden'
-        popup.style.opacity = '0'
-    }
-
 }
 
 const fullItemsCarouselArea = document.getElementById('full-item');
