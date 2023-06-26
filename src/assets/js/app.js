@@ -698,86 +698,87 @@ if (carouselFullWidth) {
 }
 
 // acervo effects
+const acervo = document.getElementById('acervo')
 
-// open/close cards
-const buttonAcervoOpen = document.querySelectorAll('.button_open_description');
-const buttonAcervoClose = document.querySelectorAll('.button_back');
-const buttonAcervoMore = document.querySelectorAll('.button_more');
-const moreContentsAcervo = document.querySelector('.button_more_acervo');
+if (acervo) {
+    // open/close cards
+    const buttonAcervoOpen = document.querySelectorAll('.button_open_description');
+    const buttonAcervoClose = document.querySelectorAll('.button_back');
+    const buttonAcervoMore = document.querySelectorAll('.button_more');
+    const moreContentsAcervo = document.querySelector('.button_more_acervo');
 
-buttonAcervoOpen.forEach(button => {
-    button.addEventListener('click', () => {
-        button.parentElement.classList.add('active');
+    buttonAcervoOpen.forEach(button => {
+        button.addEventListener('click', () => {
+            button.parentElement.classList.add('active');
 
-        buttonAcervoClose.forEach(button => {
-            button.classList.add('active');
-        })
+            buttonAcervoClose.forEach(button => {
+                button.classList.add('active');
+            })
 
-    });
-});
-
-buttonAcervoClose.forEach(button => {
-
-    button.addEventListener('click', () => {
-        button.parentElement.parentElement.classList.remove('active');
+        });
     });
 
-    button.addEventListener('mouseover', (e) => {
-        const effect = button.parentElement.querySelector('.effect');
+    buttonAcervoClose.forEach(button => {
 
-        effect.style.left = '0px';
+        button.addEventListener('click', () => {
+            button.parentElement.parentElement.classList.remove('active');
+        });
 
-        e.currentTarget.classList.add('active');
+        button.addEventListener('mouseover', (e) => {
+            const effect = button.parentElement.querySelector('.effect');
 
-        buttonAcervoMore.forEach(button => {
-            button.classList.remove('active');
+            effect.style.left = '0px';
+
+            e.currentTarget.classList.add('active');
+
+            buttonAcervoMore.forEach(button => {
+                button.classList.remove('active');
+            })
+        })
+    });
+
+    buttonAcervoMore.forEach(button => {
+
+        button.addEventListener('mouseover', (e) => {
+            const effect = button.parentElement.querySelector('.effect');
+
+            effect.style.left = '60px';
+
+            e.currentTarget.classList.add('active');
+
+            buttonAcervoClose.forEach(button => {
+                button.classList.remove('active');
+            })
         })
     })
-});
 
-buttonAcervoMore.forEach(button => {
+    const acervoArea = document.querySelector('.acervo_area');
+    const areaMore = document.querySelector('.area_more');
+    const acervoItem = document.querySelectorAll('.acervo_item');
+    const buttonAcervo = document.querySelector('.button_more_acervo');
 
-    button.addEventListener('mouseover', (e) => {
-        const effect = button.parentElement.querySelector('.effect');
+    let count = 0
+    let sum = 0
+    let gap = 40
 
-        effect.style.left = '60px';
-
-        e.currentTarget.classList.add('active');
-
-        buttonAcervoClose.forEach(button => {
-            button.classList.remove('active');
-        })
-    })
-})
-
-const acervoArea = document.querySelector('.acervo_area');
-const areaMore = document.querySelector('.area_more');
-const acervoItem = document.querySelectorAll('.acervo_item');
-const buttonAcervo = document.querySelector('.button_more_acervo');
-
-let count = 0
-let sum = 0
-let gap = 40
-
-while (count < acervoItem.length) {
-    sum = sum + gap + acervoItem[count].clientHeight
-    count = count + 4
-}
-
-moreContentsAcervo.addEventListener('click', () => {
-
-    let currentHeight = acervoArea.clientHeight;
-
-    areaMore.classList.toggle('active')
-    buttonAcervo.classList.toggle('active')
-
-    acervoArea.style.height = `${sum + 200}px`
-
-    if (currentHeight >= sum) {
-        acervoArea.style.height = `${1090}px`
-        location.href = '#acervo'
+    while (count < acervoItem.length) {
+        sum = sum + gap + acervoItem[count].clientHeight
+        count = count + 4
     }
 
-});
+    moreContentsAcervo.addEventListener('click', () => {
 
+        let currentHeight = acervoArea.clientHeight;
 
+        areaMore.classList.toggle('active')
+        buttonAcervo.classList.toggle('active')
+
+        acervoArea.style.height = `${sum + 200}px`
+
+        if (currentHeight >= sum) {
+            acervoArea.style.height = `${1090}px`
+            location.href = '#acervo'
+        }
+
+    });
+}

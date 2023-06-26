@@ -2,3 +2,10 @@
 @import url("../../../components/carousel-fullwidth/fullwidth.css");
 
 /* colocar aqui o bg novo do cmg */
+.sinopse_row .function_sinopse .sinopse_button {
+    visibility: hidden;
+}
+
+.sinopse_row .sinopse_area {
+    height: 280px;
+}
