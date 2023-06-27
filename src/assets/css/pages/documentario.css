@@ -1,11 +1,50 @@
 @import url("../../../components/cmg/cmg.css");
 @import url("../../../components/carousel-fullwidth/fullwidth.css");
+@import url("../../../components/acervo/acervo.css");
 
-/* colocar aqui o bg novo do cmg */
+#cmg .cmg_row {
+    background-image: url(https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/bg-cmg-institucional.webp);
+}
+
 .sinopse_row .function_sinopse .sinopse_button {
     visibility: hidden;
 }
 
 .sinopse_row .sinopse_area {
     height: 280px;
+}
+
+#xtra .xtra_carousel .prev {
+    display: none;
+}
+
+.xtra_carousel .xtra_items {
+    justify-content: center;
+}
+
+.xtra_carousel .xtra_items .xra_item {
+    filter: brightness(1);
+    pointer-events: auto;
+    cursor: pointer;
+}
+
+#xtra .xtra_carousel .next {
+    display: none;
+}
+
+.xtra_carousel .dots {
+    display: none;
+}
+
+.acervo_area {
+    grid-template-columns: repeat(3, 1fr);
+    height: auto;
+}
+
+#acervo .row .title {
+    color: white;
+}
+
+#acervo .row .description {
+    color: white;
 }

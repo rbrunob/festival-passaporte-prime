@@ -7,52 +7,58 @@
         <div class="gallery_area">
             <div class="gallery_items">
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_0.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img05.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_2.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img01.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_3.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img04.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_4.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img02.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_5.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img03.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_6.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img06.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_7.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img07.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_8.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img10.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_9.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img09.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_10.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img08.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_11.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Vista_aerea_da_China_divulgacao_CCTV_img11.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_12.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E01_divulgacao_CMG_07.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_13.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E02_divulgacao_CMG_02.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_14.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E01_divulgacao_CMG_04.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_15.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E02_divulgacao_CMG_03.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/image_gallery_16.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E01_divulgacao_CMG_08.webp" alt="image gallery" loading="lazy" />
+                </div>
+                <div class="gallery_item">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E02_divulgacao_CMG_06.webp" alt="image gallery" loading="lazy" />
+                </div>
+                <div class="gallery_item">
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/Os_Antílopes_Tibetanos_E02_divulgacao_CMG_05.webp" alt="image gallery" loading="lazy" />
                 </div>
             </div>
         </div>

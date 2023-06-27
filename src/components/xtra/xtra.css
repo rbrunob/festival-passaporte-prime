@@ -94,6 +94,17 @@
     height: 200px;
 }
 
+.xtra_carousel .xtra_items .xra_item.highlight video {
+    border-radius: 20px;
+}
+
+.xtra_carousel .xtra_items .xra_item video {
+    border-radius: 20px;
+    filter: drop-shadow(2px 4px 6px black);
+    width: 100%;
+    height: 200px;
+}
+
 .xtra_carousel .dots {
     display: flex;
     align-items: center;

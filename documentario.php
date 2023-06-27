@@ -18,6 +18,7 @@
     <main>
         <? include("./src/components/carousel-fullwidth/fullwidth.php") ?>
         <? include("./src/components/sinopse/sinopse-documentario.php") ?>
+        <? include("./src/components/acervo/acervo-documentario.php") ?>
         <? include("./src/components/xtra/xtra-documentario.php") ?>
         <? include("./src/components/gallery/gallery-documentario.php") ?>
         <? include("./src/components/channels/channels.php") ?>

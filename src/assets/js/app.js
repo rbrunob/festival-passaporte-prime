@@ -189,7 +189,10 @@ if (carouselArea) {
 const dotsArea = document.querySelector('.dots');
 const xtraCarouselArea = document.querySelector('.xtra_items');
 const xtraCarouselItems = document.querySelectorAll('.xra_item');
-if (xtraCarouselArea) {
+const xtraArea = document.getElementById('xtra')
+
+let pathname = '/passaporte-prime/documentario.php'
+if (window.location.pathname != pathname && xtraArea) {
     // dafault variables
     let isDragging = false;
     let startPosition = 0;

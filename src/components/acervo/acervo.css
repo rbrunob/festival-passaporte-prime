@@ -57,6 +57,7 @@
     position: relative;
     top: 0;
     gap: 5px;
+    margin: 0 auto;
     justify-content: flex-end;
 }
 
@@ -104,7 +105,7 @@
     line-height: 150%;
     overflow-y: auto;
     opacity: 0;
-    padding: 30px 5px 0;
+    padding: 30px 20px 0;
 }
 
 .acervo_area .acervo_item .item_button {
@@ -189,6 +190,10 @@
 
 #acervo .acervo_area .acervo_item.active .item_description .description {
     opacity: 1;
+}
+
+#acervo .acervo_area .acervo_item.active .item_description .description span {
+    font-weight: bold;
 }
 
 .acervo_area .acervo_item.active .item_button .button_back {
@@ -289,7 +294,8 @@
 
 .acervo_area .acervo_item.active {
     height: 500px;
-    top: -40px;
+    top: 0;
+    margin: 0 auto;
 }
 
 .acervo_area .acervo_item.active .item_image img {
