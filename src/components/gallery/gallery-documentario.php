@@ -31,7 +31,7 @@
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/tesouros-3.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
-                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/tenologia-1.webp" alt="image gallery" loading="lazy" />
+                    <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/tecnologia-1.webp" alt="image gallery" loading="lazy" />
                 </div>
                 <div class="gallery_item">
                     <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/tecnologia-2.webp" alt="image gallery" loading="lazy" />
