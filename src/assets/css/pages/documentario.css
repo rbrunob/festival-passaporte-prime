@@ -52,3 +52,7 @@
 .acervo_area .acervo_item.active .item_button .effect {
     width: 0;
 }
+
+#xtra {
+    background-size: cover;
+}
