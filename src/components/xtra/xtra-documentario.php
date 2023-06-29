@@ -12,7 +12,7 @@
                     <video src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/P_PROMO_DOC_VISTAAEREADACHINA.mp4" controls></video>
                 </div>
                 <div class="xra_item item-1">
-                    <video src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/P_PROMO_SER_SABORESDAVIDA_T01_E01.mp4" controls></video>
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/GnU3uxIMTug" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 </div>
                 <div class="xra_item item-2">
                     <video src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/videos/P_PROMO_SER_TECNOLOGIAPARAUMAVIDAMELHOR_T01.mp4" controls></video>
