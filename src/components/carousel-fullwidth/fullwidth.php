@@ -2,6 +2,9 @@
     <div class="fullwidth_row">
         <div class="carousel_fullwidth">
             <div class="item">
+                <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/sabores-da-vida.webp" alt="image fullwidth" />
+            </div>
+            <div class="item">
                 <img src="https://preprod.containermedia.com.br/passaporte-prime/src/assets/images/banner-tesouros-maravilhosos.webp" alt="image fullwidth" />
             </div>
             <div class="item">

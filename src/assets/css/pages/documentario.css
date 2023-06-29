@@ -56,3 +56,7 @@
 #xtra {
     background-size: cover;
 }
+
+.fullwidth_row .dotsfull {
+    bottom: 10%;
+}
