@@ -739,7 +739,33 @@ if (acervo) {
         })
     });
 
-    buttonAcervoMore.forEach(button => {
+    buttonAcervoMore.forEach((button, index) => {
+
+        button.addEventListener('click', () => {
+            console.log(index)
+            let href = '';
+
+            switch (index) {
+                case 4:
+                case 18:
+                case 20:
+                case 21:
+                case 22:
+                case 25:
+                    href = 'https://preprod.containermedia.com.br/passaporte-prime/documentario.php'
+                    break
+                case 12:
+                    href = 'https://preprod.containermedia.com.br/passaporte-prime/luta-ceu-afora.php'
+                    break
+                case 23:
+                    href = 'https://triboseimperios.com.br/'
+                    break
+                default:
+                    href = 'https://preprod.containermedia.com.br/passaporte-prime/acervo.php'
+            }
+
+            window.open(href, "target=`_blank`");
+        })
 
         button.addEventListener('mouseover', (e) => {
             const effect = button.parentElement.querySelector('.effect');
@@ -783,4 +809,6 @@ if (acervo) {
         }
 
     });
+
+
 }
