@@ -21,7 +21,7 @@
         <? include("./src/components/group/group.php") ?>
         <? include("./src/components/blog/blog.php") ?>
         <? include("./src/components/channels/channels.php") ?>
-        <? include("./src/components/cmg/cmg.php") ?>
+        <? include("./src/components/cmg/cmg-acervo.php") ?>
     </main>
 
     <? include("./src/components/footer/footer.php") ?>
